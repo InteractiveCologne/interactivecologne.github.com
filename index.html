@@ -182,13 +182,15 @@
 
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script>
-	$('.accordeon').each(function() {
-		$(this).find('h3:not(:first)').addClass('collapsed').next('div').hide();
-	});
-	$(document).on('click', '.accordeon h3', function (e) {
-		$(this).parent().find('h3').not( $(this) ).addClass('collapsed').next('div').hide();
-		$(this).removeClass('collapsed').next('div').show();
-	  })
+	  // init
+		$('.accordeon').each(function() {
+			$(this).find('h3:not(:first)').addClass('collapsed').next('div').hide();
+		});
+		// tab click
+		$(document).on('click', '.accordeon h3', function (e) {
+			$(this).parent().find('h3').not( $(this) ).addClass('collapsed').next('div').slideUp('slow');
+			$(this).removeClass('collapsed').next('div').slideDown('slow');
+		});
 	</script>
 </body>
 </html>
