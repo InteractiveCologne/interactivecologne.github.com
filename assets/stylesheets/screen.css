@@ -233,6 +233,7 @@ button:hover {
 		  background-size: 70%;
 		}
 
+		#contact     { background: none; }
 		#hack-n-tech      { background-position: 142px 32px; }
 		#startup-business { background-position: 142px -88px; }
 		#web-de-cologne   { background-position: 142px -209px; }
