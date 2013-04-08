@@ -20,7 +20,13 @@ body {
 
 a,
 a:link,
-a:visited { text-decoration: none; }
+a:visited {
+  text-decoration: underline;
+  color: #8889ab;
+}
+a:hover {
+  color: silver;
+} }
 
 p     { margin-top: 0; }
 p + p { margin-top: 0.5em;}
