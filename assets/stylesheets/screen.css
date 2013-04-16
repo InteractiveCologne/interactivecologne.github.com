@@ -13,6 +13,7 @@ body {
 	font: 1.1em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
 	min-height: 100%;
@@ -26,7 +27,7 @@ a:visited {
 }
 a:hover {
   color: silver;
-} }
+}
 
 p     { margin-top: 0; }
 p + p { margin-top: 0.5em;}
@@ -123,6 +124,43 @@ h4 { margin-bottom: 0; }
 	clear: both;
 	overflow: hidden;
 }
+
+.content {
+	background-color: #000;
+	color: #fff;
+	padding: 1.5em;
+	margin-bottom: 3em;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0 0 1em;
+	padding: 0;
+	}
+
+	nav li {
+		float: left;
+		margin-right: 0.5em;
+	}
+
+	nav a,
+	nav a:link,
+	nav a:visited {
+		display: block;
+		padding: 0.25em 1.1em;
+		color: #fff;
+		background-color: #000;
+		background-color: rgba(0, 0, 0, 0.75);
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	nav a:hover,
+	nav a.active {
+		color: #000;
+		background-color: rgba(209, 226, 140, 0.8);
+	}
 
 @media screen and (max-width:1000px) {
 	.container { padding: 0 1em; }
