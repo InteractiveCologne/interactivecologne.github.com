@@ -141,6 +141,7 @@ nav ul {
 
 	nav li {
 		float: left;
+		margin-bottom: 0.5em;
 		margin-right: 0.5em;
 	}
 
