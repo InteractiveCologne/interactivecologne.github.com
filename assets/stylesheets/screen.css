@@ -29,6 +29,26 @@ a:hover {
   color: silver;
 }
 
+a.big,
+a.big:link,
+a.big:visited {
+	font-size: 2em;
+	background-color: white;
+	color: black;
+	padding: 10px 51px 10px 51px;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+a.big:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+span.big {
+	font-size: 2em;
+}
+
 p     { margin-top: 0; }
 p + p { margin-top: 0.5em;}
 
