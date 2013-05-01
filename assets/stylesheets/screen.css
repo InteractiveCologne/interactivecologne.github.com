@@ -338,6 +338,7 @@ button:hover {
 /* -- Organizers ----------------------------------------------------------- */
 
 #organizers {
+	margin-top: 35px;
 	margin-bottom: 35px;
 	background: url(../images/organizer_background.jpg) no-repeat;
 	-webkit-background-size: cover;
@@ -389,27 +390,30 @@ button:hover {
 
 /* -- Team ----------------------------------------------------------- */
 
-#team strong {
+.team strong {
 	text-transform: uppercase;
 }
 
-#team strong, #team a {
+.team strong, .team li > a {
 	font-size: 0.9em;
+}
+
+.team a {
 	color: black;
 }
 
-#team p {
-	font-size: 0.7em;
+.team p {
+	font-size: 0.8em;
 	font-weight: 300;
 }
 
-#team ul {
+.team ul {
 	list-style-type: none;
 	margin: 1em 0em;
 	padding: 0;
 }
 
-#team li {
+.team li {
 	float: left;
 	background-color: rgb(255, 255, 255);
 	background-color: rgba(255, 255, 255, 0.8);
@@ -419,7 +423,7 @@ button:hover {
 	margin-left: 10px;
 }
 
-#team li:first-child {
+.team li:first-child {
 	margin-left: 0px;
 }
 
