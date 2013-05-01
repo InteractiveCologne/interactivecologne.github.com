@@ -64,13 +64,12 @@ p + p { margin-top: 0.5em;}
 	margin-top: 30px;
 }
 
-h3 {
+h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-weight: 500;
 	text-shadow: 1px 1px 3px rgba(0,0,0,1);
+	margin-bottom: 0.5em;
 }
-
-h4 { margin-bottom: 0; }
 
 .visuallyhidden {
 	position: absolute;
@@ -96,7 +95,6 @@ h4 { margin-bottom: 0; }
 
 h1.marker, h1.marker-white, h2.marker, h2.marker-white, h3.marker, h3.marker-white,
 h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-white {
-	margin: 1em 0em;
 	text-transform: uppercase;
 	display: inline-block;
 }
@@ -182,8 +180,8 @@ nav ul {
 
 	nav li {
 		float: left;
-		margin-bottom: 0.5em;
-		margin-right: 0.5em;
+		margin-bottom: 0.3em;
+		margin-right: 0.3em;
 	}
 
 	nav a,
@@ -484,6 +482,8 @@ button:hover {
 	float: left;
 	width: 240px;
 	padding: 0 20px;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 footer {
