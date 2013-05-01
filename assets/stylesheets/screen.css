@@ -86,6 +86,13 @@ h4 { margin-bottom: 0; }
 	display: inline;
 }
 
+h1.marker, h1.marker-white, h2.marker, h2.marker-white, h3.marker, h3.marker-white,
+h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-white {
+	margin: 1em 0em;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
 .left {
 	float: left;
 	max-width: 50%;
@@ -385,12 +392,6 @@ button:hover {
 
 /* -- Team ----------------------------------------------------------- */
 
-#team h2 {
-	margin: 1em 0em;
-	text-transform: uppercase;
-	display: inline-block;
-}
-
 #team strong {
 	text-transform: uppercase;
 }
@@ -423,6 +424,76 @@ button:hover {
 #team li:first-child {
 	margin-left: 0px;
 }
+
+
+/* -- Supporter ----------------------------------------------------------- */
+
+.metalsupporter a {
+	float: left;
+	background-color: rgb(229, 246, 200);
+	background-color: rgba(209, 226, 140, 0.2);
+}
+
+.metalsupporter a:hover {
+	background-color: rgb(174, 192, 129);
+	background-color: rgba(154, 172, 89, 0.5);
+}
+
+.metalsupporter a:first-child {
+	margin-left: 0px !important;
+}
+
+.metalsupporter .platinum a {
+	margin-left: 20px;
+	padding: 20px;
+	width: 460px;
+}
+
+.metalsupporter .gold a {
+	margin-left: 20px;
+	padding: 10px;
+	width: 290px;
+}
+
+.metalsupporter .silver a {
+	margin-left: 10px;
+	padding: 10px;
+	width: 180px;
+}
+
+#supporter strong {
+	text-transform: uppercase;
+}
+
+#supporter strong, #team a {
+	font-size: 0.9em;
+}
+
+#supporter p {
+	font-size: 0.7em;
+	font-weight: 300;
+}
+
+#supporter ul {
+	list-style-type: none;
+	margin: 1em 0em;
+	padding: 0;
+}
+
+#supporter li {
+	float: left;
+	background-color: rgb(229, 246, 200);
+	background-color: rgba(209, 226, 140, 0.2);
+	width: 232px;
+	min-height: 330px;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+#supporter li:first-child {
+	margin-left: 0px;
+}
+
 
 footer {
 	padding-bottom: 35px;
