@@ -438,60 +438,49 @@ button:hover {
 }
 
 .metalsupporter a:first-child {
-	margin-left: 20px !important;
+	margin-left: 0px !important;
 }
 
 .metalsupporter .platinum a {
-	margin-left: 20px;
+	margin-left: 40px;
 	padding: 20px;
 	width: 460px;
 }
 
 .metalsupporter .gold a {
-	margin-left: 20px;
+	margin-left: 30px;
 	padding: 15px;
 	width: 300px;
 }
 
 .metalsupporter .silver a {
-	margin-left: 10px;
+	margin-left: 15px;
 	padding: 10px;
 	width: 180px;
 }
 
-#supporter strong {
+.supporter strong {
 	text-transform: uppercase;
-}
-
-#supporter strong, #team a {
 	font-size: 0.9em;
 }
 
-#supporter p {
-	font-size: 0.7em;
-	font-weight: 300;
+.supporter a {
+	font-size: 0.9em;
 }
 
-#supporter ul {
+.supporter ul {
 	list-style-type: none;
-	margin: 1em 0em;
-	padding: 0;
+	margin: 0;
+	padding: 20px 0;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
-#supporter li {
+.supporter li {
 	float: left;
-	background-color: rgb(229, 246, 200);
-	background-color: rgba(209, 226, 140, 0.2);
-	width: 232px;
-	min-height: 330px;
-	padding: 10px;
-	margin-left: 10px;
+	width: 240px;
+	padding: 0 20px;
 }
-
-#supporter li:first-child {
-	margin-left: 0px;
-}
-
 
 footer {
 	padding-bottom: 35px;
