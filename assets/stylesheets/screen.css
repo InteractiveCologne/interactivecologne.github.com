@@ -398,6 +398,7 @@ button:hover {
 
 #team strong, #team a {
 	font-size: 0.9em;
+	color: black;
 }
 
 #team p {
@@ -413,8 +414,8 @@ button:hover {
 
 #team li {
 	float: left;
-	background-color: rgb(229, 246, 200);
-	background-color: rgba(209, 226, 140, 0.2);
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.8);
 	width: 232px;
 	min-height: 330px;
 	padding: 10px;
