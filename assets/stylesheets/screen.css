@@ -409,6 +409,7 @@ button:hover {
 	list-style-type: none;
 	margin: 1em 0em;
 	padding: 0;
+	overflow: hidden;
 }
 
 .team li {
@@ -419,9 +420,11 @@ button:hover {
 	min-height: 330px;
 	padding: 10px;
 	margin-left: 10px;
+	margin-bottom: 1em;
 }
 
-.team li:first-child {
+.team li:first-child,
+.team li:nth-child(5n) {
 	margin-left: 0px;
 }
 
