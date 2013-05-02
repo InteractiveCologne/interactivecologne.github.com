@@ -417,7 +417,7 @@ button:hover {
 	background-color: rgb(255, 255, 255);
 	background-color: rgba(255, 255, 255, 0.8);
 	width: 232px;
-	min-height: 330px;
+	min-height: 450px;
 	padding: 10px;
 	margin-left: 10px;
 	margin-bottom: 1em;
@@ -471,6 +471,7 @@ button:hover {
 
 .supporter a {
 	font-size: 0.9em;
+	margin-right: 15px;
 }
 
 .supporter ul {
