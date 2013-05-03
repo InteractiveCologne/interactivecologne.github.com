@@ -502,3 +502,7 @@ footer {
 	margin-right: 10px;
 	clear: left;
 }
+
+.ticketing h2 {
+	display:none;
+}
