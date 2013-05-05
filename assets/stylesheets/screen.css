@@ -19,6 +19,16 @@ body {
 	min-height: 100%;
 }
 
+#re-publica {
+	position: absolute;
+	top: 200px;
+	right: 250px;
+	width: 250px;
+	height: 350px;
+	z-index: 0;
+}
+
+
 a,
 a:link,
 a:visited {
