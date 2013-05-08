@@ -460,18 +460,22 @@ button:hover {
 	margin-left: 40px;
 	padding: 20px;
 	width: 460px;
+	min-height: 250px;
 }
 
 .metalsupporter .gold a {
 	margin-left: 30px;
 	padding: 15px;
 	width: 300px;
+	min-height: 187px;
 }
 
 .metalsupporter .silver a {
 	margin-left: 15px;
 	padding: 10px;
 	width: 260px;
+	min-height: 160px;
+	margin-top: 10px;
 }
 
 .supporter strong {
@@ -482,6 +486,11 @@ button:hover {
 .supporter a {
 	font-size: 0.9em;
 	margin-right: 15px;
+	height: 80px;
+	min-height: 80px;
+	width: 133px;
+	margin-right: 20px;
+	margin-top: 10px;
 }
 
 .supporter ul {
