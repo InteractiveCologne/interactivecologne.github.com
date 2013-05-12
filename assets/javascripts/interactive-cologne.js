@@ -13,9 +13,10 @@ var _gaq = _gaq || [];
 			canvas: null,
 			markers: null,
 			map : {
-				zoom: 13,
+				zoom: 14,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
-				backgroundColor: '#fff'
+				backgroundColor: '#fff',
+				center: new google.maps.LatLng(50.9372,6.9469)
 			},
 			marker : {
 			},
