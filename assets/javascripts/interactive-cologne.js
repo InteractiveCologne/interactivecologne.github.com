@@ -178,8 +178,11 @@ var _gaq = _gaq || [];
 				animation: google.maps.Animation.DROP
 			}
 		};
+
 		// Init the map
-		map.init( mapOptions );
+		if ( window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' ) {
+			map.init( mapOptions );
+		}
 
 	} );
 
