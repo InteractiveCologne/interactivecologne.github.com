@@ -55,7 +55,7 @@ body {
 #map-markers{display:none}
 .infobox div{padding:5px;text-align:center}
 .infobox p{float:none;margin:0}
-.infobox:after,.infobox:before{display:none}}
+.infobox:after,.infobox:before{display:none}
 
 
 a,
@@ -340,6 +340,7 @@ button:hover {
 		background-size: 50%;
 		cursor: pointer
 		}
+
 		.accordeon h3:hover {
 			background-color: rgba(209, 226, 140, 0.6);
 		}
@@ -357,10 +358,10 @@ button:hover {
 		.accordeon h3.collapsed i {
 			/* accordeon_expand.png */
 			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABPBAMAAABYGoW1AAAAGFBMVEXDugSIgw5bWBaTjQy7swZVUhcAAiXc0gDHQ7b/AAAAB3RSTlP46d7r9t3MEwjpBgAAAGxJREFUSMdjSCMOJDCMKhxVOKqQUoWpoWHEKUwuLyVWYRHVTRxWCouGk9UETEwNhYDA8lIoKxS7woBydFCEXWE4hsJSChUGsbiAgXt5CYTh4oTf14HDK5kVjabwoW1iKnKmGq3iRhWOKqS1QgDFvex0D8ohyAAAAABJRU5ErkJggg==) no-repeat;
-		  background-size: 70%;
+			  background-size: 70%;
 		}
 
-		#contact     { background: none; }
+		#contact          { background: none; }
 		#hack-n-tech      { background-position: 142px 32px; }
 		#startup-business { background-position: 142px -88px; }
 		#web-de-cologne   { background-position: 142px -209px; }
