@@ -22,11 +22,11 @@ var _gaq = _gaq || [];
 			infobox : {
 				pixelOffset: new google.maps.Size( -145, 0 ),
 				boxStyle: {
-					width: '290px'
+					width: '400px'
 				},
 				boxClass: 'infobox',
 				closeBoxMargin: '5px',
-				closeBoxURL: 'images/close.png'
+				closeBoxURL: '/assets/images/close.png'
 			}
 		},
 
@@ -166,7 +166,6 @@ var _gaq = _gaq || [];
 
 	$( document ).ready( function() {
 		// Custom map options
-		console.log("blub");
 		var mapOptions = {
 			canvas: $( '#map-canvas' ), // The place of the map
 			markers: $( '#map-markers > div' ), // The markers
@@ -178,7 +177,6 @@ var _gaq = _gaq || [];
 				animation: google.maps.Animation.DROP
 			}
 		};
-
 		// Init the map
 		map.init( mapOptions );
 
