@@ -1,34 +1,26 @@
----
-layout: default
----
 
-<div class="container content">
+<div class="container content" style="margin-bottom: 0.3em;">
 	<!-- TODO move to common screen.css when this is more stable -->
 	<style type="text/css">
-		table.schedule {
+		table.scheduleoverview {
 			width: 100%;
 		}
-		table.schedule th, table.schedule td {
+		table.scheduleoverview th, table.scheduleoverview td {
 			width: 12.5%;
 			vertical-align: middle;
 			text-align: center;
 			height: 50px;
 		}
-		table.schedule td {
+		table.scheduleoverview td {
 			font-size: 0.8em;
 			font-weight: bold;
 		}
-		table.schedule a {
+		table.scheduleoverview a {
 			display: block;
 		}
 	</style>
 
-	<a href="index.html" class="big">Overview</a>
-	<a href="hack-n-tech-startup-tuesday.html" class="big">Tuesday</a>
-	<a href="hack-n-tech-startup-wednesday.html" class="big">Wednesday</a>
-
-	<h2>Overview</h2>
-	<table class="schedule" style="border-spacing: 5px;">
+	<table class="scheduleoverview" style="border-spacing: 5px;">
 		<tr>
 			<th>Mon. 17th</th>
 			<th>Tue. 18th</th>
@@ -97,56 +89,6 @@ layout: default
 					Get together @ Die Wohngemeinschaft
 				</a>
 			</td>
-		</tr>
-	</table>
-
-	<h2>Overview</h2>
-	<!--
-		TODO cj: ausarbeiten oder wieder löschen.
-		Problem sind die diversen doppelbelegungen wenn man die slots je tageszeit zuordnen will...
-	-->
-	<table class="schedule">
-		<tr>
-			<th>Time</th>
-			<th>Mon. 17th</th>
-			<th>Tue. 18th</th>
-			<th>Wed. 19th</th>
-			<th>Thu. 20th</th>
-			<th>Fri. 21th</th>
-			<th>Sat. 22th</th>
-			<th>Sun. 23th</th>
-		</tr>
-		<tr>
-			<th>Morning</th>
-			<td>Kick-Off &amp; Keynotes</td>
-		</tr>
-		<tr>
-			<th>Morning <!-- ~ 9-12 --></th>
-			<td>TODO</td>
-			<td>TODO</td>
-			<td colspan="5" rowspan="3" style="background-color: #971620;">
-				c/o pop
-			</td>
-		</tr>
-		<tr>
-			<th>Lunchtime <!-- ~ 12-15 --></th>
-		</tr>
-		<tr>
-			<th>Afternoon <!-- ~ 15-18 --></th>
-		</tr>
-		<tr>
-			<th>Evening <!-- ~ 18-21 --></th>
-			<td>
-				Welcome @ Die Wohngemeinschaft
-				Concerts organized by Lars Wolff <lw@synpro.io>
-				Details coming soon
-			</td>
-			<td colspan="4">
-				Get together @ Die Wohngemeinschaft
-			</td>
-		</tr>
-		<tr>
-			<th>Night <!-- ~ 21-24 --></th>
 		</tr>
 	</table>
 
