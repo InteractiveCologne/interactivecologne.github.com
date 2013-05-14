@@ -254,6 +254,71 @@ nav ul {
 	.container { padding: 0 1em; }
 }
 
+/* -- Schedule ------------------------------------------------------------- */
+table.scheduleoverview {
+	width: 100%;
+	}
+	table.scheduleoverview th, table.scheduleoverview td {
+		width: 12.5%;
+		vertical-align: middle;
+		text-align: center;
+		height: 50px;
+	}
+	table.scheduleoverview td {
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+	table.scheduleoverview a {
+		display: block;
+	}
+
+table.schedule {
+	width: 100%;
+	}
+	table.schedule th, table.schedule td {
+		width: 30%;
+		vertical-align: middle;
+		text-align: center;
+	}
+	table.schedule th:first-child, table.schedule td:first-child {
+		width: 10%;
+	}
+	table.schedule td {
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+	table.schedule a {
+		display: block;
+		color: black;
+	}
+    .schedule .common {
+	    color: black;
+	    background-color: #e1e1e1;
+    }
+    .schedule .hackorga {
+	    color: black;
+	    background-color: rgb(164, 231, 147);
+    }
+    .schedule .hackitself {
+	    color: black;
+	    background-color: rgb(122, 172, 109);
+    }
+	.schedule .hackkickoffaward {
+		color: black;
+		background-color: #9ac5e8;
+	}
+    .schedule .hacktalks {
+	    color: black;
+	    background-color: rgb(141, 198, 126);
+    }
+    .schedule .startuptalks {
+	    color: black;
+	    background-color: rgb(238, 239, 89);
+    }
+    .schedule .startupbreakfast {
+	    color: black;
+		background-color: lightpink;
+    }
 
 /* -- Registration form ---------------------------------------------------- */
 input {
