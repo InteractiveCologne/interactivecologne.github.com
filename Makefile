@@ -1,7 +1,7 @@
 build:
 	jekyll
-#publish: build
-#	rsync -r --stats _site/ user@server:www/
+test-publish: build
+	rsync -r --stats _site/ ia13@ia13.mobilecologne.de:www/
 run:
 	jekyll --server --auto
 
