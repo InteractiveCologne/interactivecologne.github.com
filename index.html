@@ -3,7 +3,7 @@ layout: layout
 ---
 
 {% include header.html %}
-<div class="container">
+<div class="container" id="xxx" style="background-color: rgba(255, 0, 0, 0.3);">
 	<p>
 		<span class="marker">INTERACTIVE COLOGNE is a one-week festival coming up in June 2013.</span><br/>
 		<span class="marker">Our aim is to bring Cologne’s hacker, startup and creative communities together,</span><br/>
@@ -12,7 +12,18 @@ layout: layout
 		<br/>
 		<span class="marker big">KaBAM!</span>
 	</p>
+</div>
+<script type="text/javascript">
+	window.captureEvents(Event.RESIZE);
+	window.onresize = function() {
+		var h = window.innerHeight - 200;
+		if (h < 200) h = 200;
+		document.getElementById('xxx').style.height = h + 'px';
+	};
+	window.onresize();
+</script>
 
+<div class="container">
 	<form novalidate="" method="post" action="http://railslove.us4.list-manage2.com/subscribe/post?u=35591fb9ad996836219f10cbd&amp;id=bcbf2fe4bb">
 		<label for="email" class="visuallyhidden">Enter your email address</label>
 		<input type="email" placeholder="mail@example.com" id="email" name="EMAIL" value="" required>
@@ -27,8 +38,6 @@ layout: layout
 		<!--<a class="icon-rss" href="#">RSS-Feed</a>-->
 	</div>
 </div>
-
-{% include navigation.html %}
 
 <div class="accordeon container">
 	<h3 id="hack-n-tech"><i></i><span class="visuallyhidden">Hack 'n' Tech</span></h3>
@@ -120,8 +129,6 @@ layout: layout
 
 	</div>
 </div>
-
-{% include schedule-overview.html %}
 
 <div class="container">
 	<nav>

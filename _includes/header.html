@@ -1,4 +1,16 @@
 
+<nav>
+	<div class="container">
+		<ul>
+			<li><a href="/"{% if page.url == '/index.html' %} class="active"{% endif %}>x</a></li>
+			<li><a href="/hack-n-tech.html"{% if page.url == '/hack-n-tech-startup.html' or page.url == '/hack-n-tech-startup-tuesday.html' or page.url == '/hack-n-tech-startup-wednesday.html' or page.url == '/hack-n-tech.html' %} class="active"{% endif %}>Hack 'n' Tech</a></li>
+			<li><a href="/startup.html"{% if page.url == '/startup.html' %} class="active"{% endif %}>Startup &amp; Biz</a></li>
+			<li><a href="/schedule.html"{% if page.url == '/schedule.html' %} class="active"{% endif %}>Schedule</a></li>
+			<li class="tickets"><a href="/tickets.html"{% if page.url == '/tickets.html' %} class="active"{% endif %}>Tickets</a></li>
+		</ul>
+	</div>
+</nav>
+
 <div class="container">
 	<a id="interactive-cologne" href="/">
 		<h1 class="visuallyhidden">INTERACTIVE COLOGNE</h1>
