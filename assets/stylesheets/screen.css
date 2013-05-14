@@ -288,36 +288,63 @@ table.schedule {
 		font-weight: bold;
 	}
 	table.schedule a {
-		display: block;
 		color: black;
 	}
     .schedule .common {
 	    color: black;
 	    background-color: #e1e1e1;
+	    background: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
+	    background: -o-linear-gradient(top, #f1f1f1, #e1e1e1);
+	    background: -ms-linear-gradient(top, #f1f1f1, #e1e1e1);
+	    background: linear-gradient(top, #f1f1f1, #e1e1e1);
     }
     .schedule .hackorga {
 	    color: black;
 	    background-color: rgb(164, 231, 147);
+	    background: -webkit-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
+	    background: -o-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
+	    background: -ms-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
+	    background: linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
     }
     .schedule .hackitself {
 	    color: black;
 	    background-color: rgb(122, 172, 109);
+	    background: -webkit-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
+	    background: -o-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
+	    background: -ms-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
+	    background: linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
     }
 	.schedule .hackkickoffaward {
 		color: black;
 		background-color: #9ac5e8;
+		background: -webkit-linear-gradient(top, #a5d4fa, #9ac5e8);
+		background: -o-linear-gradient(top, #a5d4fa, #9ac5e8);
+		background: -ms-linear-gradient(top, #a5d4fa, #9ac5e8);
+		background: linear-gradient(top, #a5d4fa, #9ac5e8);
 	}
     .schedule .hacktalks {
 	    color: black;
 	    background-color: rgb(141, 198, 126);
+	    background: -webkit-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
+	    background: -o-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
+	    background: -ms-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
+	    background: linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
     }
     .schedule .startuptalks {
 	    color: black;
 	    background-color: rgb(238, 239, 89);
+	    background: -webkit-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
+	    background: -o-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
+	    background: -ms-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
+	    background: linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
     }
     .schedule .startupbreakfast {
 	    color: black;
-		background-color: lightpink;
+		background-color: #f5a6b1;
+	    background: -webkit-linear-gradient(top, #ffc3cb, #f5a6b1);
+	    background: -o-linear-gradient(top, #ffc3cb, #f5a6b1);
+	    background: -ms-linear-gradient(top, #ffc3cb, #f5a6b1);
+	    background: linear-gradient(top, #ffc3cb, #f5a6b1);
     }
 
 /* -- Registration form ---------------------------------------------------- */
