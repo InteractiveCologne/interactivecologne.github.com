@@ -567,7 +567,7 @@ button:hover {
 }
 
 .team li:first-child,
-.team li:nth-child(5n) {
+.team li:nth-child(4n+1) {
 	margin-left: 0px;
 }
 
