@@ -3,6 +3,9 @@ var _gaq = _gaq || [];
 ( function( $ ) {
 	"use strict";
 
+	// enable tooltips
+	$('a[data-toggle=tooltip]').tooltip();
+
 	var map, eventBox;
 
 	map = {

@@ -1,19 +1,26 @@
 
-<nav>
+<nav class="navbar navbar-fixed-top">
 	<div class="container">
-		<ul>
-			<li><a href="/hack-n-tech.html"{% if page.url == '/hack-n-tech.html' %} class="active"{% endif %}>Hack'n'Tech</a></li>
-			<li><a href="/startup.html"{% if page.url == '/startup.html' %} class="active"{% endif %}>Startup &amp; Biz</a></li>
-			<li><a href="/schedule.html"{% if page.url == '/schedule.html' %} class="active"{% endif %}>Schedule</a></li>
-			<li><a href="/map.html"{% if page.url == '/map.html' %} class="active"{% endif %}>Locations</a></li>
-			<li><a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>Parties</a></li>
-			<li class="tickets"><a href="/tickets.html"{% if page.url == '/tickets.html' %} class="active"{% endif %}>Tickets</a></li>
-		</ul>
+		<a class="btn btn-navbar right" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-align-justify"></span>
+		</a>
+
+		<div class="nav-collapse">
+			<ul class="nav">
+				<li><a href="/hack-n-tech.html"{% if page.url == '/hack-n-tech.html' %} class="active"{% endif %}
+					data-toggle="tooltip" data-placement="bottom" title="Two day Hackathon and different meetups">Hack'n'Tech</a></li>
+				<li><a href="/startup.html"{% if page.url == '/startup.html' %} class="active"{% endif %}>Startup &amp; Biz</a></li>
+				<li><a href="/schedule.html"{% if page.url == '/schedule.html' %} class="active"{% endif %}>Schedule</a></li>
+				<li><a href="/map.html"{% if page.url == '/map.html' %} class="active"{% endif %}>Locations</a></li>
+				<li><a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>Parties</a></li>
+				<li><a href="/tickets.html" class="tickets{% if page.url == '/tickets.html' %} active{% endif %}">Tickets</a></li>
+			</ul>
+		</div>
 	</div>
 </nav>
 
 <div class="container">
-	<a id="interactive-cologne" href="/">
+	<a id="interactive-cologne" href="/" data-toggle="tooltip" data-placement="right" title="Home">
 		<h1 class="visuallyhidden">INTERACTIVE COLOGNE</h1>
 		<h2 class="visuallyhidden">Hack Tech Biz Creativity &mdash; from 17th to 23th June</h2>
 	</a>

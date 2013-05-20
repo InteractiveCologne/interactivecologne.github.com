@@ -178,42 +178,36 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 }
 
 nav {
-	position: fixed;
-	width: 100%;
 	background-color: #000;
 	background-color: rgba(0, 0, 0, 0.5);
-	margin-bottom: 1em;
 }
-nav ul {
-	list-style-type: none;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	}
 
-	nav li {
-		float: left;
-	}
-
-	nav a,
-	nav a:link,
-	nav a:visited {
-		display: block;
-		padding: 0.25em 1.1em;
+	nav .nav li a,
+	nav .nav li a:link,
+	nav .nav li a:visited {
+		padding: 0.5em 1.0em;
 		color: #fff;
 		background-color: #000;
 		background-color: rgba(0, 0, 0, 0.3);
 		font-weight: bold;
 		text-decoration: none;
+		text-shadow: none;
+		margin-right: 0.5em;
 	}
-	nav a:hover,
-	nav a.active {
+	nav .nav li a:hover,
+	nav .nav li a.active {
 		color: #000;
 		background-color: rgba(209, 226, 140, 0.8);
 	}
 
-	.tickets {
-		background-color: #f00;
+	nav .nav li a.tickets {
+		background-color: rgb(193, 0, 0);
+		background-color: rgba(193, 0, 0, 0.8);
+	}
+	.tooltip-inner {
+		font-size: 0.9em;
+		font: 1.1em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: bold;
 	}
 
 /* -- Schedule ------------------------------------------------------------- */
