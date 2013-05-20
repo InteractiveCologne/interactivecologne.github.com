@@ -184,16 +184,27 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	padding: 1.5em;
 	margin-bottom: 3em;
 }
-
-nav {
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.5);
+@media screen and (max-width: 767px) {
+	.content {
+		padding: 0.5em;
+	}
 }
 
-	nav .nav li a,
-	nav .nav li a:link,
-	nav .nav li a:visited {
-		padding: 0.5em 1.0em;
+.navbar {
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.5);
+	}
+	.navbar > div > span {
+		padding: 0.5em;
+		color: #fff;
+		overflow: hidden;
+		font-weight: bold;
+	}
+	.navbar > div > a,
+	.navbar .nav li a,
+	.navbar .nav li a:link,
+	.navbar .nav li a:visited {
+		padding: 0.5em;
 		color: #fff;
 		background-color: #000;
 		background-color: rgba(0, 0, 0, 0.3);
@@ -202,13 +213,21 @@ nav {
 		text-shadow: none;
 		margin-right: 0.5em;
 	}
-	nav .nav li a:hover,
-	nav .nav li a.active {
+	@media screen and (max-width: 767px) {
+		.navbar > div > a,
+		.navbar .nav li a,
+		.navbar .nav li a:link,
+		.navbar .nav li a:visited {
+			margin-right: 0;
+		}
+	}
+	.navbar > div > a:hover,
+	.navbar .nav li a:hover,
+	.navbar .nav li a.active {
 		color: #000;
 		background-color: rgba(209, 226, 140, 0.8);
 	}
-
-	nav .nav li a.tickets {
+	.navbar .nav li a.tickets {
 		background-color: rgb(193, 0, 0);
 		background-color: rgba(193, 0, 0, 0.8);
 	}
@@ -216,6 +235,10 @@ nav {
 		font-size: 0.9em;
 		font: 1.1em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		font-weight: bold;
+	}
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 /* -- Schedule ------------------------------------------------------------- */

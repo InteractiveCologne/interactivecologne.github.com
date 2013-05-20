@@ -1,12 +1,14 @@
 
 <nav class="navbar navbar-fixed-top">
 	<div class="container">
-		<a class="btn btn-navbar right" data-toggle="collapse" data-target=".nav-collapse">
+		<a class="btn btn-navbar hidden-desktop right" data-toggle="collapse" data-target=".nav-collapse">
 			<span class="icon-align-justify"></span>
 		</a>
+		<span class="hidden-desktop">INTERACTIVE COLOGNE</span>
 
 		<div class="nav-collapse">
 			<ul class="nav">
+				<li class="hidden-desktop"><a href="/"{% if page.url == '/index.html' %} class="active"{% endif %}>Home</a></li>
 				<li><a href="/hack-n-tech.html"{% if page.url == '/hack-n-tech.html' %} class="active"{% endif %}
 					data-toggle="tooltip" data-placement="bottom" title="Two day Hackathon and different meetups">Hack'n'Tech</a></li>
 				<li><a href="/startup.html"{% if page.url == '/startup.html' %} class="active"{% endif %}
@@ -22,8 +24,8 @@
 	</div>
 </nav>
 
-<div class="container">
-	<a id="interactive-cologne" href="/" data-toggle="tooltip" data-placement="right" title="Home">
+<div class="container visible-desktop">
+	<a id="interactive-cologne" href="/" data-toggle="tooltip" data-placement="bottom" title="Home">
 		<h1 class="visuallyhidden">INTERACTIVE COLOGNE</h1>
 		<h2 class="visuallyhidden">Hack Tech Biz Creativity &mdash; from 17th to 23th June</h2>
 	</a>
