@@ -200,7 +200,6 @@ nav ul {
 
 	nav li {
 		float: left;
-		margin-right: 1em;
 	}
 
 	nav a,
@@ -212,7 +211,6 @@ nav ul {
 		background-color: #000;
 		background-color: rgba(0, 0, 0, 0.3);
 		font-weight: bold;
-		text-transform: uppercase;
 		text-decoration: none;
 	}
 	nav a:hover,
