@@ -111,6 +111,14 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	display: inline-block;
 }
 
+.big {
+	font-size: 1.4em;
+}
+
+.red {
+	color: #f00;
+}
+
 .left {
 	float: left;
 	max-width: 50%;
