@@ -3,8 +3,10 @@ var _gaq = _gaq || [];
 ( function( $ ) {
 	"use strict";
 
-	// enable tooltips
-	$('a[data-toggle=tooltip]').tooltip();
+	// Enable tooltips, for non-touch devices:
+	if (!('ontouchstart' in document.documentElement)) {
+		$('a[data-toggle=tooltip]').tooltip();
+	}
 
 	var map, eventBox;
 
