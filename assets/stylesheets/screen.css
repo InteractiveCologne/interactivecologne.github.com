@@ -169,13 +169,6 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	background-size: 100%;
 }
 
-.container {
-	max-width: 960px;
-	margin: 0 auto;
-	clear: both;
-	overflow: hidden;
-}
-
 .content {
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.8);
@@ -222,10 +215,6 @@ nav ul {
 	.tickets {
 		background-color: #f00;
 	}
-
-@media screen and (max-width:1000px) {
-	.container { padding: 0 1em; }
-}
 
 /* -- Schedule ------------------------------------------------------------- */
 table.scheduleoverview {
