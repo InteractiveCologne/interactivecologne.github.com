@@ -204,7 +204,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.navbar .nav li a,
 	.navbar .nav li a:link,
 	.navbar .nav li a:visited {
-		padding: 0.5em;
+		padding: 0.5em 1.0em;
 		color: #fff;
 		background-color: #000;
 		background-color: rgba(0, 0, 0, 0.3);
@@ -218,6 +218,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		.navbar .nav li a,
 		.navbar .nav li a:link,
 		.navbar .nav li a:visited {
+			padding: 0.5em;
 			margin-right: 0;
 		}
 	}
