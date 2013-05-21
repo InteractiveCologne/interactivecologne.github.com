@@ -336,17 +336,20 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	    background: linear-gradient(top, #ffc3cb, #f5a6b1);
     }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
 	.schedule {
 		width: 100%;
 		overflow-x: scroll;
 	}
+	.schedule:before {
+		content: '← swipe →';
+	}
 	.schedule table {
-		width: 768px;
+		width: 720px;
 	}
 	.x-schedule tr td:first-child {
 		position: absolute;
-		width: 77px;
+		width: 72px;
 		background-color: black;
 	}
 }
