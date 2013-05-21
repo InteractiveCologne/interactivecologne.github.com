@@ -243,42 +243,43 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	}
 
 /* -- Schedule ------------------------------------------------------------- */
-table.scheduleoverview {
+.scheduleoverview, .scheduleoverview table {
 	width: 100%;
 	}
-	table.scheduleoverview th, table.scheduleoverview td {
+	.scheduleoverview th, .scheduleoverview td {
 		width: 12.5%;
 		vertical-align: middle;
 		text-align: center;
 		height: 50px;
 	}
-	table.scheduleoverview td {
+	.scheduleoverview td {
 		font-size: 0.8em;
 		font-weight: bold;
+		border: 2px solid white;
 	}
-	table.scheduleoverview a {
+	.scheduleoverview a {
 		display: block;
 	}
 
-table.schedule {
+.schedule, .schedule table {
 	width: 100%;
 	}
-	table.schedule th, table.schedule td {
+	.schedule th, .schedule td {
 		width: 30%;
 		vertical-align: middle;
 		text-align: center;
 	}
-	table.schedule th:first-child, table.schedule td:first-child {
+	.schedule th:first-child, .schedule td:first-child {
 		width: 10%;
 	}
-	table.schedule td {
+	.schedule td {
 		font-size: 0.8em;
 		font-weight: bold;
 	}
-	table.schedule a {
+	.schedule a, .scheduleoverview a {
 		color: black;
 	}
-    .schedule .common {
+    .schedule .common, .scheduleoverview .common {
 	    color: black;
 	    background-color: #e1e1e1;
 	    background: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
@@ -286,7 +287,7 @@ table.schedule {
 	    background: -ms-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: linear-gradient(top, #f1f1f1, #e1e1e1);
     }
-    .schedule .hackorga {
+    .schedule .hackorga, .scheduleoverview .hackorga {
 	    color: black;
 	    background-color: rgb(164, 231, 147);
 	    background: -webkit-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
@@ -294,7 +295,7 @@ table.schedule {
 	    background: -ms-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
 	    background: linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
     }
-    .schedule .hackitself {
+    .schedule .hackitself, .scheduleoverview .hackitself {
 	    color: black;
 	    background-color: rgb(122, 172, 109);
 	    background: -webkit-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
@@ -302,7 +303,7 @@ table.schedule {
 	    background: -ms-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
     }
-	.schedule .hackkickoffaward {
+	.schedule .hackkickoffaward, .scheduleoverview .hackkickoffaward {
 		color: black;
 		background-color: #9ac5e8;
 		background: -webkit-linear-gradient(top, #a5d4fa, #9ac5e8);
@@ -310,7 +311,7 @@ table.schedule {
 		background: -ms-linear-gradient(top, #a5d4fa, #9ac5e8);
 		background: linear-gradient(top, #a5d4fa, #9ac5e8);
 	}
-    .schedule .hacktalks {
+    .schedule .hacktalks, .scheduleoverview .hacktalks {
 	    color: black;
 	    background-color: rgb(141, 198, 126);
 	    background: -webkit-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
@@ -318,7 +319,7 @@ table.schedule {
 	    background: -ms-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
 	    background: linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
     }
-    .schedule .startuptalks {
+    .schedule .startuptalks, .scheduleoverview .startuptalks {
 	    color: black;
 	    background-color: rgb(238, 239, 89);
 	    background: -webkit-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
@@ -326,7 +327,7 @@ table.schedule {
 	    background: -ms-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
     }
-    .schedule .startupbreakfast {
+    .schedule .startupbreakfast, .scheduleoverview .startupbreakfast {
 	    color: black;
 		background-color: #f5a6b1;
 	    background: -webkit-linear-gradient(top, #ffc3cb, #f5a6b1);
@@ -334,6 +335,21 @@ table.schedule {
 	    background: -ms-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: linear-gradient(top, #ffc3cb, #f5a6b1);
     }
+
+@media screen and (max-width: 767px) {
+	.schedule {
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.schedule table {
+		width: 768px;
+	}
+	.x-schedule tr td:first-child {
+		position: absolute;
+		width: 77px;
+		background-color: black;
+	}
+}
 
 /* -- Registration form ---------------------------------------------------- */
 input {

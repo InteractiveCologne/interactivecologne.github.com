@@ -2,11 +2,12 @@
 layout: default
 ---
 
-<div class="container" style="margin-bottom: 0.3em;">
-	<div class="content">
+<div class="container">
+	<div class="content visible-desktop">
 		<h2>Schedule Week Overview</h2>
 
-		<table class="scheduleoverview" style="border-spacing: 5px;">
+		<div class="scheduleoverview">
+		<table style="border-spacing: 5px;">
 			<tr>
 				<th>Mon. 17th</th>
 				<th>Tue. 18th</th>
@@ -17,83 +18,111 @@ layout: default
 				<th>Sun. 23th</th>
 			</tr>
 			<tr>
-				<td colspan="1" style="border: 2px solid white; background-color: #242E7C;">
-					<a href="/startup.html#hgnc" style="color: white;">
-						HGNC Finanzierungstag
-					</a>
+				<td class="hackitself">
+					<a href="/hack-n-tech.html#webmonday"
+					   data-toggle="tooltip" data-placement="bottom"
+					   title="@ Die Wohngemeinschaft">Webmonday</a>
 				</td>
-				<td colspan="1" style="border: 2px solid white; background-color: rgb(184,198,116)">
-					<a href="/hack-n-tech.html" style="color: white;">
-						Hack 'n' Tech<br/>
-					</a>
+				<td colspan="2" class="hackitself">
+					<a href="/hack-n-tech.html"
+					   data-toggle="tooltip" data-placement="bottom"
+					   title="@ Trinitatis church">Hack 'n' Tech</a>
 				</td>
-				<td colspan="1" style="border: 2px solid white; background-color: #6c8121">
-					<a href="/startup.html#startup-conference" style="color: white;">
-						Startup Conference<br/>
-					</a>
+				<td class="startuptalks">
+					<a href="/startup.html#web-de-cologne">Web de Cologne</a>
 				</td>
-				<td colspan="2" style="border: 2px solid white; background-color: #971620;">
-					<a href="/startup.html#c-n-b" style="color: white;">
-						C'n'B - Creativity & Business Convention
-					</a>
+				<td class="hackitself">
+					<a href="/hack-n-tech.html#hackers-for-non-hackers"
+					   data-toggle="tooltip" data-placement="bottom"
+					   title="@ STARTPLATZ">Hackers for non-Hackers</a>
 				</td>
 			</tr>
 			<tr>
-				<td colspan="1" style="border: 2px solid white; background-color: #8CACAB;">
-					<a href="/hack-n-tech.html#webmonday" style="color: white;">
-						Webmonday
-					</a>
+				<td class="startuptalks">
+					<a href="/startup.html#hgnc"
+					   data-toggle="tooltip" data-placement="bottom"
+					   title="@ University of Cologne">HGNC Finanzierungstag</a>
 				</td>
-				<td colspan="1">&nbsp;</td>
-				<td colspan="1" style="border: 2px solid white; background-color: #c40000;">
-					<a href="/hack-n-tech.html#ruby-usergroup" style="color: white;">
-						Cologne.rb
-					</a>
+				<td colspan="2" class="startuptalks">
+					<a href="/startup.html#startup-conference"
+					   data-toggle="tooltip" data-placement="bottom"
+					   title="@ Trinitatis church">Startup Conference</a>
 				</td>
-				<td colspan="1" style="border: 2px solid white; background-color: #29abe2;">
-					<a href="/startup.html#web-de-cologne" style="color: white;">
-						Web de Cologne
-					</a>
-				</td>
-				<td colspan="1" style="border: 2px solid white; background-color: #E50085;">
-					<a href="/hack-n-tech.html#hackers-for-non-hackers" style="color: white;">
-						Hackers for non-Hackers
-					</a>
+				<td colspan="2" class="startuptalks">
+					<a href="/startup.html#c-n-b">C'n'B - Creativity & Business Convention</a>
 				</td>
 			</tr>
 			<tr>
-				<td colspan="1" style="border: 2px solid white; background-color: #6c8121;">
-					<a href="/parties.html" style="color: white;">
-						WarmUp Party @ Wohgemeinschaft
-					</a>
+				<td colspan="2" style="border: none;">&nbsp;</td>
+				<td class="hackitself">
+					<a href="/hack-n-tech.html#ruby-usergroup">Cologne.rb</a>
 				</td>
-				<td colspan="2" style="border: 2px solid white; background-color: #6c8121;">
-					<a href="/parties.html" style="color: white;">
-						Hack'n'Tech'n'Startup Party @ Blue Shell
-					</a>
-				</td>
-				<td colspan="1">&nbsp;</td>
-				<td colspan="1" style="border: 2px solid white; background-color: #E50085;">
-					<a href="/hack-n-tech.html#devhousefriday" style="color: white;">
-						DevHouseFriday
-					</a>
+				<td style="border: none;">&nbsp;</td>
+				<td class="hackitself">
+					<a href="/hack-n-tech.html#devhousefriday">DevHouseFriday</a>
 				</td>
 			</tr>
 			<tr>
-				<td colspan="2">&nbsp;</td>
-				<td colspan="5" style="border: 2px solid white; background-color: #971620;">
-					<a href="/parties.html#c-o-pop-festival" style="color: white;">
-						c/o pop - Music Festival
-					</a>
+				<td class="common">
+					<a href="/parties.html#warmup-party"
+					   data-toggle="tooltip" data-placement="bottom"
+					   title="@ Die Wohngemeinschaft">WarmUp Party</a>
+				</td>
+				<td class="common">
+					<a href="/parties.html#hack-n-tech-party"
+					   data-toggle="tooltip" data-placement="bottom"
+					   title="@ Blue Shell">Hack'n'Tech'n'Startup Party</a>
+				</td>
+				<td colspan="5" style="background-color: #971620;">
+					<a href="/parties.html#c-o-pop-festival" style="color: white;">c/o pop - Music Festival</a>
 				</td>
 			</tr>
 		</table>
+		</div>
+	</div>
+	<div class="content hidden-desktop">
+		<h2>Schedule Week Overview</h2>
+
+		<strong>Mon. 17th</strong>
+		<ul>
+			<li><a href="/hack-n-tech.html#webmonday">Webmonday</a></li>
+			<li><a href="/startup.html#hgnc">HGNC Finanzierungstag</a></li>
+			<li><a href="/parties.html#warmup-party">WarmUp Party</a></li>
+		</ul>
+		<strong>Tue. 18th</strong>
+		<ul>
+			<li><a href="/hack-n-tech.html">Hack 'n' Tech</a></li>
+			<li><a href="/startup.html#startup-conference">Startup Conference</a></li>
+			<li><a href="/parties.html#hack-n-tech-party">Hack'n'Tech'n'Startup Party</a></li>
+		</ul>
+		<strong>Wed. 19th</strong>
+		<ul>
+			<li><a href="/hack-n-tech.html">Hack 'n' Tech</a></li>
+			<li><a href="/startup.html#startup-conference">Startup Conference</a></li>
+			<li><a href="/hack-n-tech.html#ruby-usergroup">Cologne.rb</a></li>
+		</ul>
+		<strong>Thu. 20th</strong>
+		<ul>
+			<li><a href="/startup.html#web-de-cologne">Web de Cologne</a></li>
+			<li><a href="/startup.html#c-n-b">C'n'B - Creativity & Business Convention</a></li>
+		</ul>
+		<strong>Fri. 21st</strong>
+		<ul>
+			<li><a href="/hack-n-tech.html#hackers-for-non-hackers">Hackers for non-Hackers</a></li>
+			<li><a href="/startup.html#c-n-b">C'n'B - Creativity & Business Convention</a></li>
+			<li><a href="/hack-n-tech.html#devhousefriday">DevHouseFriday</a></li>
+		</ul>
+		<strong>Wed. 19th - Sun. 23th</strong>
+		<ul>
+			<li><a href="/parties.html#c-o-pop-festival">c/o pop - Music Festival</a></li>
+		</ul>
 	</div>
 	<div class="content">
 		<h2>Detailed Schedule</h2>
 
 		<h3>Monday, June 17th</h3>
-		<table class="schedule">
+		<div class="schedule">
+		<table>
 			<tr>
 				<th>Time</th>
 				<th>Universität zu Köln</th>
@@ -142,10 +171,13 @@ layout: default
 				<td class="hacktalks"><strong>Beers & Party</strong></td>
 			</tr>
 		</table>
+		</div>
 	</div>
+
 	<div class="content">
 		<h3>Tuesday, June 18th</h3>
-		<table class="schedule">
+		<div class="schedule">
+		<table>
 			<tr>
 				<th>Time</th>
 				<th>Church - main stage</th>
@@ -345,12 +377,13 @@ layout: default
 			<tr>
 				<td>19:45</td>
 			</tr>
-
 		</table>
+		</div>
 	</div>
 	<div class="content">
 		<h3>Wednesday, June 19th</h3>
-		<table class="schedule">
+		<div class="schedule">
+		<table>
 			<tr>
 				<th>Time</th>
 				<th>Church</th>
@@ -573,13 +606,14 @@ layout: default
 			<tr>
 				<td>19:45</td>
 			</tr>
-
 		</table>
+		</div>
 	</div>
 	<div class="content">
 		<h3>Thursday, June 20th</h3>
 			<p>coming soon...</p>
-<!-- 		<table class="schedule">
+<!--		<div class="schedule">
+ 		<table>
 			<tr>
 				<th>Time</th>
 				<th>Universität zu Köln</th>
@@ -627,12 +661,14 @@ layout: default
 				<td>&nbsp;</td>
 				<td class="hacktalks"><strong>Beers & Party</strong></td>
 			</tr>
-		</table> -->
+		</table>
+		</div>-->
 	</div>
 	<div class="content">
 		<h3>Friday, June 21st</h3>
 			<p>coming soon...</p>
-<!-- 		<table class="schedule">
+<!-- 		<div class="schedule">
+		<table>
 			<tr>
 				<th>Time</th>
 				<th>Universität zu Köln</th>
@@ -680,12 +716,14 @@ layout: default
 				<td>&nbsp;</td>
 				<td class="hacktalks"><strong>Beers & Party</strong></td>
 			</tr>
-		</table> -->
+		</table>
+		</div>-->
 	</div>
 	<div class="content">
 		<h3>Saturday, June 22nd</h3>
 			<p>coming soon...</p>
-<!-- 		<table class="schedule">
+<!-- 		<div class="schedule">
+		<table>
 			<tr>
 				<th>Time</th>
 				<th>Universität zu Köln</th>
@@ -733,12 +771,14 @@ layout: default
 				<td>&nbsp;</td>
 				<td class="hacktalks"><strong>Beers & Party</strong></td>
 			</tr>
-		</table> -->
+		</table>
+		</div>-->
 	</div>
 	<div class="content">
 		<h3>Sunday, June 23rd</h3>
 			<p>coming soon...</p>
-<!-- 		<table class="schedule">
+<!-- 		<div class="schedule">
+		<table>
 			<tr>
 				<th>Time</th>
 				<th>Universität zu Köln</th>
@@ -786,6 +826,7 @@ layout: default
 				<td>&nbsp;</td>
 				<td class="hacktalks"><strong>Beers & Party</strong></td>
 			</tr>
-		</table> -->
+		</table>
+		</div>-->
 	</div>
 </div>
