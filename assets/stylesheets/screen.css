@@ -605,7 +605,7 @@ button:hover {
 	text-transform: uppercase;
 }
 
-.team strong, .team li > a {
+.team strong, .team a {
 	font-size: 0.9em;
 }
 
@@ -618,29 +618,13 @@ button:hover {
 	font-weight: 300;
 }
 
-.team ul {
-	list-style-type: none;
-	margin: 1em 0em;
-	padding: 0;
-	overflow: hidden;
-}
-
-.team li {
-	float: left;
+.team .span3 {
 	background-color: rgb(255, 255, 255);
 	background-color: rgba(255, 255, 255, 0.8);
-	width: 232px;
 	min-height: 520px;
 	padding: 10px;
-	margin-left: 10px;
 	margin-bottom: 1em;
 }
-
-.team li:first-child,
-.team li:nth-child(4n+1) {
-	margin-left: 0px;
-}
-
 
 /* -- Supporter ----------------------------------------------------------- */
 
