@@ -115,28 +115,6 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	font-size: 1.4em;
 }
 
-.red {
-	color: #f00;
-}
-
-.left {
-	float: left;
-	max-width: 50%;
-}
-
-.right {
-	float: right;
-	/*max-width: 50%;*/
-  }
-  .right > .sharing-widget {
-  	background-color: #fff;
-  	padding: 5px;
-  	float: right;
-  	margin-left: 20px;
-  }
-
-
-
 /* -- Basic page structure ------------------------------------------------- */
 #header {
 	position: fixed;
@@ -505,7 +483,7 @@ button:hover {
 
 		#organizers li {
 			float: left;
-			margin-left: 15px;
+			margin-left: 10px;
 		}
 
 		#organizers li:first-child {
