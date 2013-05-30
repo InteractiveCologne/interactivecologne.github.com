@@ -370,6 +370,19 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	    background: -ms-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: linear-gradient(top, #ffc3cb, #f5a6b1);
     }
+    .scheduleoverview .common-to-copop {
+	    background: #e1e1e1; /* Old browsers */
+	    background: -moz-linear-gradient(-45deg, #f1f1f1 0%, #e1e1e1 50%, #971620 51%, #971620 100%); /* FF3.6+ */
+	    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f1f1f1), color-stop(50%,#e1e1e1), color-stop(51%,#971620), color-stop(100%,#971620)); /* Chrome,Safari4+ */
+	    background: -webkit-linear-gradient(-45deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* Chrome10+,Safari5.1+ */
+	    background: -o-linear-gradient(-45deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* Opera 11.10+ */
+	    background: -ms-linear-gradient(-45deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* IE10+ */
+	    background: linear-gradient(135deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* W3C */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#971620',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    .scheduleoverview .copop {
+	    background-color: #971620;
+    }
 
 @media screen and (max-width: 720px) {
 	.schedule {
