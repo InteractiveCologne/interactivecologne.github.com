@@ -212,26 +212,32 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		font-size: 2.8em;
 		font-weight: bold;
 		letter-spacing: -3px;
-		left: -3px;
-	}
-	.frontpage .about {
-		-moz-column-count: 2;
-		-webkit-column-count: 2;
-		column-count: 2;
+		margin-left: -3px;
 	}
 	.frontpage .date {
-		color: white;
+		font-size: 1.4em;
 		font-weight: bold;
+	}
+	.frontpage .about .span6 {
+		width: 430px;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 	.frontpage .ticket {
 		display: inline-block;
 		color: white;
+		font-size: 1.2em;
+		font-weight: bold;
 		background-color: rgb(193, 0, 0);
 		background-color: rgba(193, 0, 0, 0.8);
-		margin-top: 3em;
+		margin-top: 2.5em;
 		margin-bottom: 3em;
-		padding: 15px 20px 15px 55px;
+		padding: 0.8em 1.5em;
 		text-decoration: none;
+	}
+	.frontpage .ticket .icon-ticket {
+		width: 1.5em;
+		display: inline-block;
 	}
 	.frontpage ul {
 		list-style-type: none;
@@ -240,13 +246,31 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	}
 	.frontpage li {
 		font-size: 1.2em;
-		line-height: 1.5em;
+		line-height: 1.9em;
 		font-weight: bold;
+	}
+	.frontpage li span {
+		width: 1.5em;
+		display: inline-block;
+	}
+	.frontpage li .icon-map-marker {
+		padding-left: 4px;
+	}
+	.frontpage li .icon-microphone {
+		padding-left: 3px;
 	}
 
 @media screen and (max-width: 767px) {
 	.frontpage .amazingpeople {
-		font-size: 1.4em;
+		font-size: 2.0em;
+	}
+	.frontpage .about .span6 {
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.frontpage .ticket {
+		margin: auto;
 	}
 }
 
