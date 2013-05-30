@@ -291,7 +291,6 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.scheduleoverview td {
 		font-size: 0.8em;
 		font-weight: bold;
-		border: 2px solid white;
 	}
 	.scheduleoverview a {
 		display: block;
