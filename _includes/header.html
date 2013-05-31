@@ -8,24 +8,32 @@
 		<div class="nav-collapse">
 			<ul class="nav">
 				<li class="hidden-desktop"><a href="/"{% if page.url == '/index.html' %} class="active"{% endif %}>Home</a></li>
-				<li><a href="/hack-n-tech.html"{% if page.url == '/hack-n-tech.html' %} class="active"{% endif %}
-					data-toggle="tooltip" data-placement="bottom" title="Two day Hackathon and different meetups">Hack'n'Tech</a></li>
-				<li><a href="/startup.html"{% if page.url == '/startup.html' %} class="active"{% endif %}
-					data-toggle="tooltip" data-placement="bottom" title="Pitches and talks for startups, investors and entrepreneurs!">Startup &amp; Biz</a></li>
-				<li><a href="/schedule.html"{% if page.url == '/schedule.html' %} class="active"{% endif %}
-					data-toggle="tooltip" data-placement="bottom" title="Timetable and location overview">Schedule</a></li>
-				<li><a href="/map.html"{% if page.url == '/map.html' %} class="active"{% endif %}
-					data-toggle="tooltip" data-placement="bottom" title="Cologne, the city to meet!">Locations</a></li>
+				<li><a href="/hack-n-tech.html"{% if page.url == '/hack-n-tech.html' %} class="active"{% endif %}>Hack'n'Tech</a></li>
+				<li><a href="/startup.html"{% if page.url == '/startup.html' %} class="active"{% endif %}>Startup &amp; Biz</a></li>
+				<li><a href="/speakers.html"{% if page.url == '/speakers.html' %} class="active"{% endif %}>Speakers</a></li>
+				<li><a href="/schedule.html"{% if page.url == '/schedule.html' %} class="active"{% endif %}>Schedule</a></li>
+				<li><a href="/map.html"{% if page.url == '/map.html' %} class="active"{% endif %}>Locations</a></li>
 				<li><a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>Parties</a></li>
+				<li><a href="/supporter.html"{% if page.url == '/supporter.html' %} class="active"{% endif %}>Supporter</a></li>
 				<li><a href="/tickets.html" class="tickets{% if page.url == '/tickets.html' %} active{% endif %}">Tickets</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
 
-<div class="container visible-desktop">
-	<a id="interactive-cologne" href="/" data-toggle="tooltip" data-placement="right" title="Home">
-		<h1 class="visuallyhidden">INTERACTIVE COLOGNE</h1>
-		<h2 class="visuallyhidden">Hack Tech Biz Creativity &mdash; from 17th to 23rd June</h2>
-	</a>
-</div>
+<header class="header">
+	<div class="container visible-desktop">
+		<div class="row">
+			<div class="span8">
+				<a id="interactive-cologne" href="/" data-toggle="tooltip" data-placement="right" title="Home">
+					<h1 class="visuallyhidden">INTERACTIVE COLOGNE</h1>
+					<h2 class="visuallyhidden">Hack Tech Biz Creativity &mdash; from 17th to 23rd June</h2>
+				</a>
+			</div>
+			<div class="span4" style="text-align: right;">
+				<a href="https://www.facebook.com/InteractiveCologne" target="_blank"><img src="/assets/images/button_facebook2.png" width="32" height="32" alt="Facebook"></a>
+				<a href="https://twitter.com/interactive_cgn" target="_blank"><img src="/assets/images/button_twitter2.png" width="32" height="32" alt="Twitter"></a>
+			</div>
+		</div>
+	</div>
+</header>
