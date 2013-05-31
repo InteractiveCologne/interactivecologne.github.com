@@ -10,7 +10,6 @@ html { height: 100%; }
 body {
 	position: relative;
 	font: 1.0em/1.5em 'Noto Sans', Tahoma, Geneva, Helvetica, Arial, sans-serif;
-	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
@@ -77,7 +76,6 @@ p + p { margin-top: 0.5em;}
 
 h1, h2, h3, h4, h5, h6 {
 	color: #fff;
-	font-weight: 500;
 	text-shadow: 1px 1px 3px rgba(0,0,0,1);
 	margin-bottom: 0.5em;
 }
@@ -475,9 +473,7 @@ button:hover {
 		margin-right: 20px;
 		color: #fff;
 		font-size: 1em;
-		font-weight: 500;
 		text-shadow: 1px 1px 3px rgba(0,0,0,1);
-		font-weight: bold;
 	}
 
 
@@ -633,7 +629,7 @@ button:hover {
 
 .team p {
 	font-size: 0.8em;
-	font-weight: 300;
+	line-height: 1.5em;
 }
 
 .team .span3 {
