@@ -9,7 +9,7 @@
 html { height: 100%; }
 body {
 	position: relative;
-	font: 1.0em/1.5 'Noto Sans', Tahoma, Geneva, Helvetica, Arial, sans-serif;
+	font: 1.0em/1.5 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -121,7 +121,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	min-width: 100%;
 	min-height: 100%;
 	z-index: 0;
-	background: url(../images/header_background_small.jpg) no-repeat;
+	background: url(../images/header_background_blur.jpg) no-repeat;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
@@ -218,12 +218,13 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.frontpage .amazingpeople {
 		font-size: 2.8em;
 		font-weight: bold;
-		letter-spacing: -3px;
-		margin-left: -3px;
+		letter-spacing: -1px;
+		margin-left: -1px;
 	}
 	.frontpage .date {
 		font-size: 1.4em;
 		font-weight: bold;
+		color: white;
 	}
 	.frontpage .about .span6 {
 		width: 430px;
