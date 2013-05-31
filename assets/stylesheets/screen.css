@@ -75,6 +75,7 @@ p + p { margin-top: 0.5em;}
 }
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 	color: #fff;
 	text-shadow: 1px 1px 3px rgba(0,0,0,1);
 	margin-bottom: 0.5em;
