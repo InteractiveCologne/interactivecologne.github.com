@@ -9,7 +9,7 @@
 html { height: 100%; }
 body {
 	position: relative;
-	font: 1.0em/1.5 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
+	font: 1.0em/1.5em 'Noto Sans', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -238,13 +238,13 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 .frontpage {
 }
 	.frontpage .amazingpeople {
-		font-size: 2.8em;
+		font: 2.8em/1.1em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		letter-spacing: -1px;
 		margin-left: -1px;
 	}
 	.frontpage .date {
-		font-size: 1.4em;
+		font: 1.4em/2.0em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		color: white;
 	}
@@ -256,7 +256,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.frontpage .ticket {
 		display: inline-block;
 		color: white;
-		font-size: 1.2em;
+		font: 1.2em/1.5em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		background-color: rgb(193, 0, 0);
 		background-color: rgba(193, 0, 0, 0.8);
@@ -274,8 +274,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		padding: 0;
 	}
 	.frontpage li {
-		font-size: 1.2em;
-		line-height: 1.9em;
+		font: 1.2em/2.1em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
 	}
 	.frontpage li span {
