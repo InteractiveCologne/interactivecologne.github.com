@@ -115,6 +115,10 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 }
 
 /* -- Basic page structure ------------------------------------------------- */
+.header {
+	margin-top: 1.8em;
+	margin-bottom: 2.2em;
+}
 #header {
 	position: fixed;
 	top: 0;
@@ -156,8 +160,16 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 }
 
 .navbar {
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 1.5em;
+	}
+	.navbar .nav {
+		width: 100%;
+		margin: 0;
+	}
+	.navbar .subnav {
+		width: 100%;
+		margin: 0;
+		background-color: black;
 	}
 	.navbar > div > span {
 		padding: 0.5em;
@@ -169,13 +181,23 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.navbar .nav li a,
 	.navbar .nav li a:link,
 	.navbar .nav li a:visited {
-		padding: 0.5em 1.0em;
-		color: #fff;
-		background-color: #000;
-		background-color: rgba(0, 0, 0, 0.3);
+		font: 0.9em/1.1em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
+		margin-right: 1px;
+		padding: 1.6em 1.8em;
+		color: black;
+		background-color: white;
+		text-transform: uppercase;
 		text-decoration: none;
 		text-shadow: none;
+	}
+	.navbar .subnav li a,
+	.navbar .subnav li a:link,
+	.navbar .subnav li a:visited {
+		padding: 1.2em 0 1.2em 1.8em;
+		text-transform: none;
+		color: white;
+		background-color: black;
 	}
 	@media screen and (max-width: 767px) {
 		.navbar > div > a,
@@ -189,27 +211,27 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.navbar > div > a:hover,
 	.navbar .nav li a:hover,
 	.navbar .nav li a.active {
-		color: #000;
-		background-color: rgba(209, 226, 140, 0.8);
+		color: #68807e;
+		background-color: black;
+	}
+	.navbar .subnav li a:hover,
+	.navbar .subnav li a.active {
+		color: white;
+		text-decoration: underline;
 	}
 	.navbar .nav li a.tickets {
+		color: white;
 		background-color: rgb(193, 0, 0);
 		background-color: rgba(193, 0, 0, 0.8);
-	}
-	.tooltip-inner {
-		font-size: 0.9em;
-		font: 1.1em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		font-weight: bold;
+		background-image: url(../images/ticket.png);
+		background-position: 20px center;
+		background-repeat: no-repeat;
+		padding-left: 75px;
 	}
 	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
 		margin-left: 0;
 		margin-right: 0;
 	}
-
-.header {
-	margin-top: 3.75em;
-	margin-bottom: 2.5em;
-}
 
 /* -- Frontpage ------------------------------------------------- */
 

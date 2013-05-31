@@ -1,4 +1,21 @@
-<nav class="navbar navbar-fixed-top">
+<header class="header visible-desktop">
+	<div class="container">
+		<div class="row">
+			<div class="span8">
+				<a id="interactive-cologne" href="/" data-toggle="tooltip" data-placement="right" title="Home">
+					<h1 class="visuallyhidden">INTERACTIVE COLOGNE</h1>
+					<h2 class="visuallyhidden">Hack Tech Biz Creativity &mdash; from 17th to 23rd June</h2>
+				</a>
+			</div>
+			<div class="span4" style="text-align: right;">
+				<a href="https://www.facebook.com/InteractiveCologne" target="_blank"><img src="/assets/images/button_facebook2.png" width="32" height="32" alt="Facebook"></a>
+				<a href="https://twitter.com/interactive_cgn" target="_blank"><img src="/assets/images/button_twitter2.png" width="32" height="32" alt="Twitter"></a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<nav class="navbar navbar-static-top">
 	<div class="container">
 		<a class="btn btn-navbar hidden-desktop right" data-toggle="collapse" data-target=".nav-collapse">
 			<span class="icon-align-justify"></span>
@@ -18,22 +35,19 @@
 				<li><a href="/tickets.html" class="tickets{% if page.url == '/tickets.html' %} active{% endif %}">Tickets</a></li>
 			</ul>
 		</div>
+		{% if page.url == '/schedule.html-NOT-YET' %}
+		<div>
+			<ul class="nav subnav">
+				<li><a href="/schedule.html"{% if page.url == '/schedule.html' %} class="active"{% endif %}>Overview</a></li>
+				<li><a href="/schedule/monday.html"{% if page.url == '/schedule/monday.html' %} class="active"{% endif %}>Monday</a></li>
+				<li><a href="/schedule/thusday.html"{% if page.url == '/schedule/thusday.html' %} class="active"{% endif %}>Thusday</a></li>
+				<li><a href="/schedule/wednesday.html"{% if page.url == '/schedule/wednesday.html' %} class="active"{% endif %}>Wednesday</a></li>
+				<li><a href="/schedule/thursday.html"{% if page.url == '/schedule/thursday.html' %} class="active"{% endif %}>Thursday</a></li>
+				<li><a href="/schedule/friday.html"{% if page.url == '/schedule/friday.html' %} class="active"{% endif %}>Friday</a></li>
+				<li><a href="/schedule/saturday.html"{% if page.url == '/schedule/saturday.html' %} class="active"{% endif %}>Saturday</a></li>
+				<li><a href="/schedule/sunday.html"{% if page.url == '/schedule/sunday.html' %} class="active"{% endif %}>Sunday</a></li>
+			</ul>
+		</div>
+		{% endif %}
 	</div>
 </nav>
-
-<header class="header">
-	<div class="container visible-desktop">
-		<div class="row">
-			<div class="span8">
-				<a id="interactive-cologne" href="/" data-toggle="tooltip" data-placement="right" title="Home">
-					<h1 class="visuallyhidden">INTERACTIVE COLOGNE</h1>
-					<h2 class="visuallyhidden">Hack Tech Biz Creativity &mdash; from 17th to 23rd June</h2>
-				</a>
-			</div>
-			<div class="span4" style="text-align: right;">
-				<a href="https://www.facebook.com/InteractiveCologne" target="_blank"><img src="/assets/images/button_facebook2.png" width="32" height="32" alt="Facebook"></a>
-				<a href="https://twitter.com/interactive_cgn" target="_blank"><img src="/assets/images/button_twitter2.png" width="32" height="32" alt="Twitter"></a>
-			</div>
-		</div>
-	</div>
-</header>
