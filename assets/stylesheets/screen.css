@@ -55,7 +55,7 @@ a,
 a:link,
 a:visited {
 	text-decoration: underline;
-	color: #b4c571;
+	color: #68807e;
 	-webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
 	-moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
 	-o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
@@ -670,4 +670,30 @@ footer {
 
 .ticketing h2 {
 	display:none;
+}
+
+
+.inspirations_icon {
+	background: url(../images/icon_inspiration.png) no-repeat;
+	height: 25px;
+}
+
+.locations_icon {
+	background: url(../images/icon_location.png) no-repeat;
+	height: 25px;	
+}
+
+.parties_icon {
+	background: url(../images/icon_parties.png) no-repeat;
+	height: 25px;	
+}
+
+.speakers_icon {
+	background: url(../images/icon_speaker.png) no-repeat;
+	height: 25px;	
+}
+
+.tickets_icon {
+	background: url(../images/icon_ticket.png) no-repeat;
+	height: 25px;	
 }
