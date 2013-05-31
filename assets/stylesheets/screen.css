@@ -67,10 +67,6 @@ a:hover {
 	-o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
 	transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
-a.offset-anchor, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .speaker a {
-	border-top: 50px solid transparent;
-	margin-top: -50px;
-}
 
 p     { margin-top: 0; }
 p + p { margin-top: 0.5em;}
