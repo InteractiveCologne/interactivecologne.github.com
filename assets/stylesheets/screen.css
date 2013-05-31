@@ -5,7 +5,6 @@
           box-sizing: border-box;
 }
 
-
 /* -- Content formatting --------------------------------------------------- */
 html { height: 100%; }
 body {
@@ -238,14 +237,13 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		font-weight: bold;
 		background-color: rgb(193, 0, 0);
 		background-color: rgba(193, 0, 0, 0.8);
+		background-image: url(../images/ticket.png);
+		background-position: 20px center;
+		background-repeat: no-repeat;
 		margin-top: 2.5em;
 		margin-bottom: 3em;
-		padding: 0.8em 1.5em;
+		padding: 0.8em 20px 0.8em 75px;
 		text-decoration: none;
-	}
-	.frontpage .ticket .icon-ticket {
-		width: 1.5em;
-		display: inline-block;
 	}
 	.frontpage ul {
 		list-style-type: none;
@@ -258,14 +256,29 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		font-weight: bold;
 	}
 	.frontpage li span {
-		width: 1.5em;
+		width: 32px;
+		min-height: 25px;
 		display: inline-block;
 	}
-	.frontpage li .icon-map-marker {
-		padding-left: 4px;
+	.frontpage li.locations_icon {
+		padding-left: 35px;
+		background: url(../images/icon_location.png) no-repeat;
+		background-position: 3px center;
 	}
-	.frontpage li .icon-microphone {
-		padding-left: 3px;
+	.frontpage li.speakers_icon {
+		padding-left: 35px;
+		background: url(../images/icon_speaker.png) no-repeat;
+		background-position: 4px center;
+	}
+	.frontpage li.parties_icon {
+		padding-left: 35px;
+		background: url(../images/icon_parties.png) no-repeat;
+		background-position: 0 center;
+	}
+	.frontpage li.inspirations_icon {
+		padding-left: 35px;
+		background: url(../images/icon_inspiration.png) no-repeat;
+		background-position: 2px center;
 	}
 
 @media screen and (max-width: 767px) {
@@ -408,42 +421,29 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 
 /* -- Registration form ---------------------------------------------------- */
 input {
-	border: 1px solid #8889ab !important;
 	width: 55% !important;
 	height: auto !important;
-	padding: 8px 5px !important;
 	margin: 0 !important;
-
-	-webkit-border-radius: 2px !important;
-	        border-radius: 2px !important;
+	padding: 8px 5px !important;
+	border: none;
 }
-input:focus {
-	border-color: #b4c571 !important;
-}
-
 button {
-	border: 1px solid #9aac59 !important;
-	background-color: #b4c571 !important;
 	width: 40% !important;
 	font-size: 0.8em !important;
 	text-transform: uppercase !important;
 	padding: 8px 5px !important;
-	text-shadow: 0px 1px 0px #fff !important;
+	border: none;
 	cursor: pointer !important;
-	-webkit-box-shadow: inset 0px 1px 2px 0px #fff !important;
-	        box-shadow: inset 0px 1px 2px 0px #fff !important;
-	-webkit-border-radius: 2px !important;
-	        border-radius: 2px !important;
+	color: white;
+	background-color: #68807e !important;
 }
 button:hover {
-	background-color: #9aac59 !important;
+	background-color: #7c9997 !important;
 }
-
 @media screen and (max-width:960px) {
 	input  { width: 57%; }
 	button { max-width: 40%; }
 }
-
 
 #social-links {
 	clear: both;
@@ -670,30 +670,4 @@ footer {
 
 .ticketing h2 {
 	display:none;
-}
-
-
-.inspirations_icon {
-	background: url(../images/icon_inspiration.png) no-repeat;
-	height: 25px;
-}
-
-.locations_icon {
-	background: url(../images/icon_location.png) no-repeat;
-	height: 25px;	
-}
-
-.parties_icon {
-	background: url(../images/icon_parties.png) no-repeat;
-	height: 25px;	
-}
-
-.speakers_icon {
-	background: url(../images/icon_speaker.png) no-repeat;
-	height: 25px;	
-}
-
-.tickets_icon {
-	background: url(../images/icon_ticket.png) no-repeat;
-	height: 25px;	
 }
