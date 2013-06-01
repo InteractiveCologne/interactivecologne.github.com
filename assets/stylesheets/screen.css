@@ -162,7 +162,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		margin: 0;
 	}
 	.navbar .subnav {
-		width: 939px;
+		width: 938px;
 		margin: 0;
 		background-color: black;
 	}
@@ -195,6 +195,12 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		background-color: black;
 	}
 	@media screen and (max-width: 767px) {
+		.navbar .nav {
+			width: 100%;
+		}
+		.navbar .subnav {
+			width: 100%;
+		}
 		.navbar > div > a,
 		.navbar .nav li a,
 		.navbar .nav li a:link,
@@ -222,6 +228,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		background-position: 20px center;
 		background-repeat: no-repeat;
 		padding-left: 75px;
+		margin-right: 0;
 		width: 154px;
 	}
 	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
