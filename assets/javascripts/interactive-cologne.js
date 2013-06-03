@@ -185,9 +185,9 @@ var _gaq = _gaq || [];
 		};
 
 		// Init the map
-		// if ( window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' ) {
+		if ( window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' ) {
 			map.init( mapOptions );
-		// }
+		}
 
 	} );
 

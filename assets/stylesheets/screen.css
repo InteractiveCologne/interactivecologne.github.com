@@ -354,76 +354,76 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		font-weight: bold;
 	}
 	.schedule a, .scheduleoverview a {
-		color: black;
+		color: #fff;
 	}
     .schedule .common, .scheduleoverview .common {
-	    color: black;
-	    background-color: #e1e1e1;
-	    background: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
+	    color: #fff;
+	    background-color: #86a4a2;
+/*	  background: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: -o-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: -ms-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: linear-gradient(top, #f1f1f1, #e1e1e1);
-    }
+*/    }
     .schedule .hackorga, .scheduleoverview .hackorga {
-	    color: black;
-	    background-color: rgb(164, 231, 147);
-	    background: -webkit-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
+	    color: #fff;
+	    background-color: #ef9645;
+/*	    background: -webkit-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
 	    background: -o-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
 	    background: -ms-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
-	    background: linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
+	    background: linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));*/
     }
     .schedule .hackitself, .scheduleoverview .hackitself {
-	    color: black;
-	    background-color: rgb(122, 172, 109);
-	    background: -webkit-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
+	    color: #fff;
+	    background-color: #ef9645;
+/*	    background: -webkit-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: -o-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: -ms-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
-    }
+*/    }
 	.schedule .hackkickoffaward, .scheduleoverview .hackkickoffaward {
-		color: black;
-		background-color: #9ac5e8;
-		background: -webkit-linear-gradient(top, #a5d4fa, #9ac5e8);
+		color: #fff;
+		background-color: #ef9645;
+/*		background: -webkit-linear-gradient(top, #a5d4fa, #9ac5e8);
 		background: -o-linear-gradient(top, #a5d4fa, #9ac5e8);
 		background: -ms-linear-gradient(top, #a5d4fa, #9ac5e8);
-		background: linear-gradient(top, #a5d4fa, #9ac5e8);
+		background: linear-gradient(top, #a5d4fa, #9ac5e8);*/
 	}
     .schedule .hacktalks, .scheduleoverview .hacktalks {
-	    color: black;
-	    background-color: rgb(141, 198, 126);
-	    background: -webkit-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
+	    color: #fff;
+	    background-color: #ef9645;
+/*	    background: -webkit-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
 	    background: -o-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
 	    background: -ms-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
-	    background: linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
+	    background: linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));*/
     }
     .schedule .startuptalks, .scheduleoverview .startuptalks {
-	    color: black;
-	    background-color: rgb(238, 239, 89);
-	    background: -webkit-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
+	    color: #fff;
+	    background-color: #946235;
+/*	    background: -webkit-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: -o-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: -ms-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
-    }
+*/    }
     .schedule .startupbreakfast, .scheduleoverview .startupbreakfast {
-	    color: black;
-		background-color: #f5a6b1;
-	    background: -webkit-linear-gradient(top, #ffc3cb, #f5a6b1);
+	    color: #fff;
+			background-color: #946235;
+/*	    background: -webkit-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: -o-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: -ms-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: linear-gradient(top, #ffc3cb, #f5a6b1);
-    }
+*/    }
     .scheduleoverview .common-to-copop {
-	    background: #e1e1e1; /* Old browsers */
-	    background: -moz-linear-gradient(-45deg, #f1f1f1 0%, #e1e1e1 50%, #971620 51%, #971620 100%); /* FF3.6+ */
-	    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f1f1f1), color-stop(50%,#e1e1e1), color-stop(51%,#971620), color-stop(100%,#971620)); /* Chrome,Safari4+ */
-	    background: -webkit-linear-gradient(-45deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* Chrome10+,Safari5.1+ */
-	    background: -o-linear-gradient(-45deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* Opera 11.10+ */
-	    background: -ms-linear-gradient(-45deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* IE10+ */
-	    background: linear-gradient(135deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* W3C */
+	    background: #86a4a2; /* Old browsers */
+	    background: -moz-linear-gradient(-45deg, #86a4a2 0%, #86a4a2 50%, #68807e 51%, #68807e 100%); /* FF3.6+ */
+	    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#86a4a2), color-stop(50%,#86a4a2), color-stop(51%,#68807e), color-stop(100%,#68807e)); /* Chrome,Safari4+ */
+	    background: -webkit-linear-gradient(-45deg, #86a4a2 0%,#86a4a2 50%,#68807e 51%,#68807e 100%); /* Chrome10+,Safari5.1+ */
+	    background: -o-linear-gradient(-45deg, #86a4a2 0%,#86a4a2 50%,#68807e 51%,#68807e 100%); /* Opera 11.10+ */
+	    background: -ms-linear-gradient(-45deg, #86a4a2 0%,#86a4a2 50%,#68807e 51%,#68807e 100%); /* IE10+ */
+	    background: linear-gradient(135deg, #86a4a2 0%,#86a4a2 50%,#68807e 51%,#68807e 100%); /* W3C */
 	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#971620',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
     .scheduleoverview .copop {
-	    background-color: #971620;
+	    background-color: #68807e;
     }
 
 @media screen and (max-width: 720px) {
