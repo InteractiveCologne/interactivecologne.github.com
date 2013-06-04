@@ -29,7 +29,7 @@
 				<li><a href="/startup.html"{% if page.url == '/startup.html' %} class="active"{% endif %}>Startup &amp; Biz</a></li>
 				<!-- <li><a href="/creativity.html"{% if page.url == '/creativity.html' %} class="active"{% endif %}>Creativity</a></li> -->
 				<li><a href="/speakers.html"{% if page.url == '/speakers.html' %} class="active"{% endif %}>Speakers</a></li>
-				<li><a href="/schedule.html"{% if page.url == '/schedule.html' %} class="active"{% endif %}>Schedule</a></li>
+				<li><a href="/schedule/"{% if page.url == '/schedule/index.html' %} class="active"{% endif %}>Schedule</a></li>
 				<li><a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>Parties</a></li>
 				<li><a href="/map.html"{% if page.url == '/map.html' %} class="active"{% endif %}>Locations</a></li>
 				<li><a href="/supporter.html"{% if page.url == '/supporter.html' %} class="active"{% endif %}>Supporter</a></li>
@@ -74,17 +74,18 @@
 			</ul>
 		</div>
 		{% endif %}
-		{% if page.url == '/schedule.html' %}
+		<!-- Dirty but it works... -->
+		{% if page.url == '/schedule/index.html' or page.url == '/schedule/monday.html' or page.url == '/schedule/tuesday.html' or page.url == '/schedule/wednesday.html' or page.url == '/schedule/thursday.html' or page.url == '/schedule/friday.html' or page.url == '/schedule/saturday.html' or page.url == '/schedule/sunday.html' %}
 		<div>
 			<ul class="nav subnav">
-				<li><a href="/schedule.html"{% if page.url == '/schedule.html' %} class="active"{% endif %}>Overview</a></li>
-				<li><a href="/schedule.html#monday"{% if page.url == '/schedule.html/monday' %} class="active"{% endif %}>Monday</a></li>
-				<li><a href="/schedule.html#tuesday"{% if page.url == '/schedule.html/thusday' %} class="active"{% endif %}>Thusday</a></li>
-				<li><a href="/schedule.html#wednesday"{% if page.url == '/schedule.html/wednesday' %} class="active"{% endif %}>Wednesday</a></li>
-				<li><a href="/schedule.html#thursday"{% if page.url == '/schedule.html/thursday' %} class="active"{% endif %}>Thursday</a></li>
-				<li><a href="/schedule.html#friday"{% if page.url == '/schedule.html/friday' %} class="active"{% endif %}>Friday</a></li>
-				<li><a href="/schedule.html#saturday"{% if page.url == '/schedule.html/saturday' %} class="active"{% endif %}>Saturday</a></li>
-				<li><a href="/schedule.html#sunday"{% if page.url == '/schedule.html/sunday' %} class="active"{% endif %}>Sunday</a></li>
+				<li><a href="/schedule/"{% if page.url == '/schedule/index.html' %} class="active"{% endif %}>Overview</a></li>
+				<li><a href="/schedule/monday.html"{% if page.url == '/schedule/monday.html' %} class="active"{% endif %}>Monday</a></li>
+				<li><a href="/schedule/tuesday.html"{% if page.url == '/schedule/thusday.html' %} class="active"{% endif %}>Thusday</a></li>
+				<li><a href="/schedule/wednesday.html"{% if page.url == '/schedule/wednesday.html' %} class="active"{% endif %}>Wednesday</a></li>
+				<li><a href="/schedule/thursday.html"{% if page.url == '/schedule/thursday.html' %} class="active"{% endif %}>Thursday</a></li>
+				<li><a href="/schedule/friday.html"{% if page.url == '/schedule/friday.html' %} class="active"{% endif %}>Friday</a></li>
+				<li><a href="/schedule/saturday.html"{% if page.url == '/schedule/saturday.html' %} class="active"{% endif %}>Saturday</a></li>
+				<li><a href="/schedule/sunday.html"{% if page.url == '/schedule/sunday.html' %} class="active"{% endif %}>Sunday</a></li>
 			</ul>
 		</div>
 		{% endif %}
