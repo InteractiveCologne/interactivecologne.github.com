@@ -342,7 +342,6 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	width: 100%;
 	}
 	.schedule th, .schedule td {
-		width: 30%;
 		vertical-align: middle;
 		text-align: center;
 	}
