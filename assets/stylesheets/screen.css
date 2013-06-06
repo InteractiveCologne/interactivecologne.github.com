@@ -5,13 +5,11 @@
           box-sizing: border-box;
 }
 
-
 /* -- Content formatting --------------------------------------------------- */
 html { height: 100%; }
 body {
 	position: relative;
-	font: 1.0em/1.5 'Noto Sans', Tahoma, Geneva, Helvetica, Arial, sans-serif;
-	font-weight: 300;
+	font: 1.0em/1.5em 'Noto Sans', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
@@ -68,10 +66,6 @@ a:hover {
 	-o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
 	transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
-a.offset-anchor, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .speaker a {
-	border-top: 50px solid transparent;
-	margin-top: -50px;
-}
 
 p     { margin-top: 0; }
 p + p { margin-top: 0.5em;}
@@ -81,8 +75,8 @@ p + p { margin-top: 0.5em;}
 }
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 	color: #fff;
-	font-weight: 500;
 	text-shadow: 1px 1px 3px rgba(0,0,0,1);
 	margin-bottom: 0.5em;
 }
@@ -116,13 +110,17 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 }
 
 /* -- Basic page structure ------------------------------------------------- */
+.header {
+	margin-top: 1.8em;
+	margin-bottom: 2.2em;
+}
 #header {
 	position: fixed;
 	top: 0;
 	min-width: 100%;
 	min-height: 100%;
 	z-index: 0;
-	background: url(../images/header_background_small.jpg) no-repeat;
+	background: url(../images/header_background_blur.jpg) no-repeat;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
@@ -157,8 +155,16 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 }
 
 .navbar {
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 1.5em;
+	}
+	.navbar .nav {
+		width: 940px;
+		margin: 0;
+	}
+	.navbar .subnav {
+		width: 938px;
+		margin: 0;
+		background-color: black;
 	}
 	.navbar > div > span {
 		padding: 0.5em;
@@ -170,15 +176,31 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.navbar .nav li a,
 	.navbar .nav li a:link,
 	.navbar .nav li a:visited {
-		padding: 0.5em 1.0em;
-		color: #fff;
-		background-color: #000;
-		background-color: rgba(0, 0, 0, 0.3);
+		font: 0.9em/1.1em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
+		margin-right: 1px;
+		padding: 1.6em 1.8em;
+		color: black;
+		background-color: white;
+		text-transform: uppercase;
 		text-decoration: none;
 		text-shadow: none;
 	}
+	.navbar .subnav li a,
+	.navbar .subnav li a:link,
+	.navbar .subnav li a:visited {
+		padding: 1.2em 0 1.2em 1.8em;
+		text-transform: none;
+		color: white;
+		background-color: black;
+	}
 	@media screen and (max-width: 767px) {
+		.navbar .nav {
+			width: 100%;
+		}
+		.navbar .subnav {
+			width: 100%;
+		}
 		.navbar > div > a,
 		.navbar .nav li a,
 		.navbar .nav li a:link,
@@ -190,41 +212,44 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.navbar > div > a:hover,
 	.navbar .nav li a:hover,
 	.navbar .nav li a.active {
-		color: #000;
-		background-color: rgba(209, 226, 140, 0.8);
+		color: #68807e;
+		background-color: black;
+	}
+	.navbar .subnav li a:hover,
+	.navbar .subnav li a.active {
+		color: white;
+		text-decoration: underline;
 	}
 	.navbar .nav li a.tickets {
+		color: white;
 		background-color: rgb(193, 0, 0);
 		background-color: rgba(193, 0, 0, 0.8);
-	}
-	.tooltip-inner {
-		font-size: 0.9em;
-		font: 1.1em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		font-weight: bold;
+		background-image: url(../images/ticket.png);
+		background-position: 20px center;
+		background-repeat: no-repeat;
+		padding-left: 75px;
+		margin-right: 0;
+		width: 154px;
 	}
 	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
 		margin-left: 0;
 		margin-right: 0;
 	}
 
-.header {
-	margin-top: 3.75em;
-	margin-bottom: 2.5em;
-}
-
 /* -- Frontpage ------------------------------------------------- */
 
 .frontpage {
 }
 	.frontpage .amazingpeople {
-		font-size: 2.8em;
+		font: 2.8em/1.1em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
-		letter-spacing: -3px;
-		margin-left: -3px;
+		letter-spacing: -1px;
+		margin-left: -1px;
 	}
 	.frontpage .date {
-		font-size: 1.4em;
+		font: 1.4em/2.0em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
+		color: white;
 	}
 	.frontpage .about .span6 {
 		width: 430px;
@@ -234,18 +259,17 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.frontpage .ticket {
 		display: inline-block;
 		color: white;
-		font-size: 1.2em;
+		font: 1.2em/1.5em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		background-color: rgb(193, 0, 0);
 		background-color: rgba(193, 0, 0, 0.8);
+		background-image: url(../images/ticket.png);
+		background-position: 20px center;
+		background-repeat: no-repeat;
 		margin-top: 2.5em;
 		margin-bottom: 3em;
-		padding: 0.8em 1.5em;
+		padding: 0.8em 20px 0.8em 75px;
 		text-decoration: none;
-	}
-	.frontpage .ticket .icon-ticket {
-		width: 1.5em;
-		display: inline-block;
 	}
 	.frontpage ul {
 		list-style-type: none;
@@ -253,19 +277,33 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		padding: 0;
 	}
 	.frontpage li {
-		font-size: 1.2em;
-		line-height: 1.9em;
+		font: 1.2em/2.1em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
 	}
 	.frontpage li span {
-		width: 1.5em;
+		width: 32px;
+		min-height: 25px;
 		display: inline-block;
 	}
-	.frontpage li .icon-map-marker {
-		padding-left: 4px;
+	.frontpage li.locations_icon {
+		padding-left: 35px;
+		background: url(../images/icon_location.png) no-repeat;
+		background-position: 3px center;
 	}
-	.frontpage li .icon-microphone {
-		padding-left: 3px;
+	.frontpage li.speakers_icon {
+		padding-left: 35px;
+		background: url(../images/icon_speaker.png) no-repeat;
+		background-position: 4px center;
+	}
+	.frontpage li.parties_icon {
+		padding-left: 35px;
+		background: url(../images/icon_parties.png) no-repeat;
+		background-position: 0 center;
+	}
+	.frontpage li.inspirations_icon {
+		padding-left: 35px;
+		background: url(../images/icon_inspiration.png) no-repeat;
+		background-position: 2px center;
 	}
 
 @media screen and (max-width: 767px) {
@@ -304,7 +342,6 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	width: 100%;
 	}
 	.schedule th, .schedule td {
-		width: 30%;
 		vertical-align: middle;
 		text-align: center;
 	}
@@ -316,76 +353,76 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		font-weight: bold;
 	}
 	.schedule a, .scheduleoverview a {
-		color: black;
+		color: #fff;
 	}
     .schedule .common, .scheduleoverview .common {
-	    color: black;
-	    background-color: #e1e1e1;
-	    background: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
+	    color: #fff;
+	    background-color: #86a4a2;
+/*	  background: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: -o-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: -ms-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: linear-gradient(top, #f1f1f1, #e1e1e1);
-    }
+*/    }
     .schedule .hackorga, .scheduleoverview .hackorga {
-	    color: black;
-	    background-color: rgb(164, 231, 147);
-	    background: -webkit-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
+	    color: #fff;
+	    background-color: #ef9645;
+/*	    background: -webkit-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
 	    background: -o-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
 	    background: -ms-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
-	    background: linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
+	    background: linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));*/
     }
     .schedule .hackitself, .scheduleoverview .hackitself {
-	    color: black;
-	    background-color: rgb(122, 172, 109);
-	    background: -webkit-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
+	    color: #fff;
+	    background-color: #ef9645;
+/*	    background: -webkit-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: -o-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: -ms-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
-    }
+*/    }
 	.schedule .hackkickoffaward, .scheduleoverview .hackkickoffaward {
-		color: black;
-		background-color: #9ac5e8;
-		background: -webkit-linear-gradient(top, #a5d4fa, #9ac5e8);
+		color: #fff;
+		background-color: #ef9645;
+/*		background: -webkit-linear-gradient(top, #a5d4fa, #9ac5e8);
 		background: -o-linear-gradient(top, #a5d4fa, #9ac5e8);
 		background: -ms-linear-gradient(top, #a5d4fa, #9ac5e8);
-		background: linear-gradient(top, #a5d4fa, #9ac5e8);
+		background: linear-gradient(top, #a5d4fa, #9ac5e8);*/
 	}
     .schedule .hacktalks, .scheduleoverview .hacktalks {
-	    color: black;
-	    background-color: rgb(141, 198, 126);
-	    background: -webkit-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
+	    color: #fff;
+	    background-color: #ef9645;
+/*	    background: -webkit-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
 	    background: -o-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
 	    background: -ms-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
-	    background: linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
+	    background: linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));*/
     }
     .schedule .startuptalks, .scheduleoverview .startuptalks {
-	    color: black;
-	    background-color: rgb(238, 239, 89);
-	    background: -webkit-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
+	    color: #fff;
+	    background-color: #946235;
+/*	    background: -webkit-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: -o-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: -ms-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
-    }
+*/    }
     .schedule .startupbreakfast, .scheduleoverview .startupbreakfast {
-	    color: black;
-		background-color: #f5a6b1;
-	    background: -webkit-linear-gradient(top, #ffc3cb, #f5a6b1);
+	    color: #fff;
+			background-color: #946235;
+/*	    background: -webkit-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: -o-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: -ms-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: linear-gradient(top, #ffc3cb, #f5a6b1);
-    }
+*/    }
     .scheduleoverview .common-to-copop {
-	    background: #e1e1e1; /* Old browsers */
-	    background: -moz-linear-gradient(-45deg, #f1f1f1 0%, #e1e1e1 50%, #971620 51%, #971620 100%); /* FF3.6+ */
-	    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f1f1f1), color-stop(50%,#e1e1e1), color-stop(51%,#971620), color-stop(100%,#971620)); /* Chrome,Safari4+ */
-	    background: -webkit-linear-gradient(-45deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* Chrome10+,Safari5.1+ */
-	    background: -o-linear-gradient(-45deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* Opera 11.10+ */
-	    background: -ms-linear-gradient(-45deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* IE10+ */
-	    background: linear-gradient(135deg, #f1f1f1 0%,#e1e1e1 50%,#971620 51%,#971620 100%); /* W3C */
+	    background: #86a4a2; /* Old browsers */
+	    background: -moz-linear-gradient(-45deg, #86a4a2 0%, #86a4a2 50%, #68807e 51%, #68807e 100%); /* FF3.6+ */
+	    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#86a4a2), color-stop(50%,#86a4a2), color-stop(51%,#68807e), color-stop(100%,#68807e)); /* Chrome,Safari4+ */
+	    background: -webkit-linear-gradient(-45deg, #86a4a2 0%,#86a4a2 50%,#68807e 51%,#68807e 100%); /* Chrome10+,Safari5.1+ */
+	    background: -o-linear-gradient(-45deg, #86a4a2 0%,#86a4a2 50%,#68807e 51%,#68807e 100%); /* Opera 11.10+ */
+	    background: -ms-linear-gradient(-45deg, #86a4a2 0%,#86a4a2 50%,#68807e 51%,#68807e 100%); /* IE10+ */
+	    background: linear-gradient(135deg, #86a4a2 0%,#86a4a2 50%,#68807e 51%,#68807e 100%); /* W3C */
 	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#971620',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
     .scheduleoverview .copop {
-	    background-color: #971620;
+	    background-color: #68807e;
     }
 
 @media screen and (max-width: 720px) {
@@ -408,42 +445,29 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 
 /* -- Registration form ---------------------------------------------------- */
 input {
-	border: 1px solid #8889ab !important;
 	width: 55% !important;
 	height: auto !important;
-	padding: 8px 5px !important;
 	margin: 0 !important;
-
-	-webkit-border-radius: 2px !important;
-	        border-radius: 2px !important;
+	padding: 8px 5px !important;
+	border: none;
 }
-input:focus {
-	border-color: #b4c571 !important;
-}
-
 button {
-	border: 1px solid #9aac59 !important;
-	background-color: #b4c571 !important;
 	width: 40% !important;
 	font-size: 0.8em !important;
 	text-transform: uppercase !important;
 	padding: 8px 5px !important;
-	text-shadow: 0px 1px 0px #fff !important;
+	border: none;
 	cursor: pointer !important;
-	-webkit-box-shadow: inset 0px 1px 2px 0px #fff !important;
-	        box-shadow: inset 0px 1px 2px 0px #fff !important;
-	-webkit-border-radius: 2px !important;
-	        border-radius: 2px !important;
+	color: white;
+	background-color: #68807e !important;
 }
 button:hover {
-	background-color: #9aac59 !important;
+	background-color: #7c9997 !important;
 }
-
 @media screen and (max-width:960px) {
 	input  { width: 57%; }
 	button { max-width: 40%; }
 }
-
 
 #social-links {
 	clear: both;
@@ -457,9 +481,7 @@ button:hover {
 		margin-right: 20px;
 		color: #fff;
 		font-size: 1em;
-		font-weight: 500;
 		text-shadow: 1px 1px 3px rgba(0,0,0,1);
-		font-weight: bold;
 	}
 
 
@@ -615,7 +637,7 @@ button:hover {
 
 .team p {
 	font-size: 0.8em;
-	font-weight: 300;
+	line-height: 1.5em;
 }
 
 .team .span3 {
@@ -670,30 +692,4 @@ footer {
 
 .ticketing h2 {
 	display:none;
-}
-
-
-.inspirations_icon {
-	background: url(../images/icon_inspiration.png) no-repeat;
-	height: 25px;
-}
-
-.locations_icon {
-	background: url(../images/icon_location.png) no-repeat;
-	height: 25px;	
-}
-
-.parties_icon {
-	background: url(../images/icon_parties.png) no-repeat;
-	height: 25px;	
-}
-
-.speakers_icon {
-	background: url(../images/icon_speaker.png) no-repeat;
-	height: 25px;	
-}
-
-.tickets_icon {
-	background: url(../images/icon_ticket.png) no-repeat;
-	height: 25px;	
 }

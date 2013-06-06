@@ -1,28 +1,5 @@
-<nav class="navbar navbar-fixed-top">
+<header class="header visible-desktop">
 	<div class="container">
-		<a class="btn btn-navbar hidden-desktop right" data-toggle="collapse" data-target=".nav-collapse">
-			<span class="icon-align-justify"></span>
-		</a>
-		<span class="hidden-desktop">INTERACTIVE COLOGNE</span>
-
-		<div class="nav-collapse">
-			<ul class="nav">
-				<li class="hidden-desktop"><a href="/"{% if page.url == '/index.html' %} class="active"{% endif %}>Home</a></li>
-				<li><a href="/hack-n-tech.html"{% if page.url == '/hack-n-tech.html' %} class="active"{% endif %}>Hack'n'Tech</a></li>
-				<li><a href="/startup.html"{% if page.url == '/startup.html' %} class="active"{% endif %}>Startup &amp; Biz</a></li>
-				<li><a href="/speakers.html"{% if page.url == '/speakers.html' %} class="active"{% endif %}>Speakers</a></li>
-				<li><a href="/schedule.html"{% if page.url == '/schedule.html' %} class="active"{% endif %}>Schedule</a></li>
-				<li><a href="/map.html"{% if page.url == '/map.html' %} class="active"{% endif %}>Locations</a></li>
-				<li><a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>Parties</a></li>
-				<li><a href="/supporter.html"{% if page.url == '/supporter.html' %} class="active"{% endif %}>Supporter</a></li>
-				<li><a href="/tickets.html" class="tickets{% if page.url == '/tickets.html' %} active{% endif %}">Tickets</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
-
-<header class="header">
-	<div class="container visible-desktop">
 		<div class="row">
 			<div class="span8">
 				<a id="interactive-cologne" href="/" data-toggle="tooltip" data-placement="right" title="Home">
@@ -37,3 +14,80 @@
 		</div>
 	</div>
 </header>
+
+<nav class="navbar navbar-static-top">
+	<div class="container">
+		<a class="btn btn-navbar hidden-desktop right" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-align-justify"></span>
+		</a>
+		<span class="hidden-desktop">INTERACTIVE COLOGNE</span>
+
+		<div class="nav-collapse">
+			<ul class="nav">
+				<li class="hidden-desktop"><a href="/"{% if page.url == '/index.html' %} class="active"{% endif %}>Home</a></li>
+				<li><a href="/hack-n-tech.html"{% if page.url == '/hack-n-tech.html' %} class="active"{% endif %}>Hackathon</a></li>
+				<li><a href="/startup.html"{% if page.url == '/startup.html' %} class="active"{% endif %}>Startup &amp; Biz</a></li>
+				<!-- <li><a href="/creativity.html"{% if page.url == '/creativity.html' %} class="active"{% endif %}>Creativity</a></li> -->
+				<li><a href="/speakers.html"{% if page.url == '/speakers.html' %} class="active"{% endif %}>Speakers</a></li>
+				<li><a href="/schedule/"{% if page.url == '/schedule/index.html' %} class="active"{% endif %}>Schedule</a></li>
+				<li><a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>Parties</a></li>
+				<li><a href="/map.html"{% if page.url == '/map.html' %} class="active"{% endif %}>Locations</a></li>
+				<li><a href="/supporter.html"{% if page.url == '/supporter.html' %} class="active"{% endif %}>Supporter</a></li>
+				<li><a href="/tickets.html" class="tickets{% if page.url == '/tickets.html' %} active{% endif %}">Tickets</a></li>
+			</ul>
+		</div>
+		{% if page.url == '/hack-n-tech.html' %}
+		<div>
+			<ul class="nav subnav">
+				<li><a href="/hack-n-tech.html#mobile"{% if page.url == '/hack-n-tech.html#mobile' %} class="active"{% endif %}>Mobile</a></li>
+				<li><a href="/hack-n-tech.html#nodecopter"{% if page.url == '/hack-n-tech.html#nodecopter' %} class="active"{% endif %}>Nodecopter</a></li>
+				<li><a href="/hack-n-tech.html#girls"{% if page.url == '/hack-n-tech.html#girls' %} class="active"{% endif %}>Girls</a></li>
+				<li><a href="/hack-n-tech.html#kids"{% if page.url == '/hack-n-tech.html#kids' %} class="active"{% endif %}>Kids</a></li>
+				<li><a href="/hack-n-tech.html#music"{% if page.url == '/hack-n-tech.html#music' %} class="active"{% endif %}>Music</a></li>
+				<li><a href="/hack-n-tech.html#3dprinting"{% if page.url == '/hack-n-tech.html#3dprinting' %} class="active"{% endif %}>3D Printing</a></li>
+				<li><a href="/hack-n-tech.html#seriousgames"{% if page.url == '/hack-n-tech.html#seriousgames' %} class="active"{% endif %}>City Serious Games</a></li>
+				<li><a href="/hack-n-tech.html#opendata"{% if page.url == '/hack-n-tech.html#opendata' %} class="active"{% endif %}>Open Data</a></li>
+				<li><a href="/hack-n-tech.html#hardware"{% if page.url == '/hack-n-tech.html#hardware' %} class="active"{% endif %}>Hardware</a></li>
+				<li><a href="/hack-n-tech.html#noSQL"{% if page.url == '/hack-n-tech.html#noSQL' %} class="active"{% endif %}>NoSQL</a></li>
+				<li><a href="/hack-n-tech.html#talks"{% if page.url == '/hack-n-tech.html#talks' %} class="active"{% endif %}>Talks</a></li>				
+				<li><a href="/hack-n-tech.html#meetups"{% if page.url == '/hack-n-tech.html#meetups' %} class="active"{% endif %}>Meetups</a></li>				
+			</ul>
+		</div>
+		{% endif %}
+		{% if page.url == '/parties.html' %}
+		<div>
+			<ul class="nav subnav">
+				<li><a href="/parties.html#warmup-party"{% if page.url == '/parties.html#warmup-party' %} class="active"{% endif %}>WarmUp Party</a></li>
+				<li><a href="/parties.html#hack-n-tech-party"{% if page.url == '/parties.html#hack-n-tech-party' %} class="active"{% endif %}>Hack'n'Tech'n'Startup Party</a></li>
+				<li><a href="/parties.html#c-o-pop-festival"{% if page.url == '/parties.html#c-o-pop-festival' %} class="active"{% endif %}>c/o pop</a></li>				
+			</ul>
+		</div>
+		{% endif %}
+		{% if page.url == '/startup.html' %}
+		<div>
+			<ul class="nav subnav">
+				<li><a href="/startup.html#startup-conference"{% if page.url == '/startup.html#startup-conference' %} class="active"{% endif %}>Startup Conference</a></li>
+				<li><a href="/startup.html#dates-and-pitches-talks"{% if page.url == '/startup.html#dates-and-pitches-talks' %} class="active"{% endif %}>Pitches</a></li>
+				<li><a href="/startup.html#startup-breakfast"{% if page.url == '/startup.html#startup-breakfast' %} class="active"{% endif %}>Startup Breakfast</a></li>
+				<li><a href="/startup.html#web-de-cologne"{% if page.url == '/startup.html#web-de-cologne' %} class="active"{% endif %}>Web de Cologne</a></li>
+				<li><a href="/startup.html#hgnc"{% if page.url == '/startup.html#hgnc' %} class="active"{% endif %}>HGNC Finanzierungstag</a></li>
+			</ul>
+		</div>
+		{% endif %}
+		<!-- Dirty but it works... -->
+		{% if page.url == '/schedule/index.html' or page.url == '/schedule/monday.html' or page.url == '/schedule/tuesday.html' or page.url == '/schedule/wednesday.html' or page.url == '/schedule/thursday.html' or page.url == '/schedule/friday.html' or page.url == '/schedule/saturday.html' or page.url == '/schedule/sunday.html' %}
+		<div>
+			<ul class="nav subnav">
+				<li><a href="/schedule/"{% if page.url == '/schedule/index.html' %} class="active"{% endif %}>Overview</a></li>
+				<li><a href="/schedule/monday.html"{% if page.url == '/schedule/monday.html' %} class="active"{% endif %}>Monday</a></li>
+				<li><a href="/schedule/tuesday.html"{% if page.url == '/schedule/tuesday.html' %} class="active"{% endif %}>Tuesday</a></li>
+				<li><a href="/schedule/wednesday.html"{% if page.url == '/schedule/wednesday.html' %} class="active"{% endif %}>Wednesday</a></li>
+				<li><a href="/schedule/thursday.html"{% if page.url == '/schedule/thursday.html' %} class="active"{% endif %}>Thursday</a></li>
+				<li><a href="/schedule/friday.html"{% if page.url == '/schedule/friday.html' %} class="active"{% endif %}>Friday</a></li>
+				<li><a href="/schedule/saturday.html"{% if page.url == '/schedule/saturday.html' %} class="active"{% endif %}>Saturday</a></li>
+				<li><a href="/schedule/sunday.html"{% if page.url == '/schedule/sunday.html' %} class="active"{% endif %}>Sunday</a></li>
+			</ul>
+		</div>
+		{% endif %}
+	</div>
+</nav>

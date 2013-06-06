@@ -945,7 +945,7 @@ a.badge:focus {
 table {
   max-width: 100%;
   background-color: transparent;
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
 }
 .table {
