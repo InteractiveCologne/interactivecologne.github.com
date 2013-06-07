@@ -344,6 +344,8 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.schedule th, .schedule td {
 		vertical-align: middle;
 		text-align: center;
+		padding-left: 6px;		
+		padding-right: 6px;
 	}
 	.schedule th:first-child, .schedule td:first-child {
 		width: 10%;
@@ -357,7 +359,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	}
     .schedule .common, .scheduleoverview .common {
 	    color: #fff;
-	    background-color: #86a4a2;
+	    background-color: #869693;
 /*	  background: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: -o-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: -ms-linear-gradient(top, #f1f1f1, #e1e1e1);
@@ -365,7 +367,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 */    }
     .schedule .hackorga, .scheduleoverview .hackorga {
 	    color: #fff;
-	    background-color: #ef9645;
+	    background-color: #59446D;
 /*	    background: -webkit-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
 	    background: -o-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
 	    background: -ms-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
@@ -373,7 +375,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
     }
     .schedule .hackitself, .scheduleoverview .hackitself {
 	    color: #fff;
-	    background-color: #ef9645;
+	    background-color: #59446D;
 /*	    background: -webkit-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: -o-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: -ms-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
@@ -381,7 +383,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 */    }
 	.schedule .hackkickoffaward, .scheduleoverview .hackkickoffaward {
 		color: #fff;
-		background-color: #ef9645;
+		background-color: #59446D;
 /*		background: -webkit-linear-gradient(top, #a5d4fa, #9ac5e8);
 		background: -o-linear-gradient(top, #a5d4fa, #9ac5e8);
 		background: -ms-linear-gradient(top, #a5d4fa, #9ac5e8);
@@ -389,7 +391,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	}
     .schedule .hacktalks, .scheduleoverview .hacktalks {
 	    color: #fff;
-	    background-color: #ef9645;
+	    background-color: #59446D;
 /*	    background: -webkit-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
 	    background: -o-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
 	    background: -ms-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
@@ -397,7 +399,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
     }
     .schedule .startuptalks, .scheduleoverview .startuptalks {
 	    color: #fff;
-	    background-color: #946235;
+	    background-color: #3E8CBD;
 /*	    background: -webkit-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: -o-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: -ms-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
@@ -405,7 +407,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 */    }
     .schedule .startupbreakfast, .scheduleoverview .startupbreakfast {
 	    color: #fff;
-			background-color: #946235;
+			background-color: #869693;
 /*	    background: -webkit-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: -o-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: -ms-linear-gradient(top, #ffc3cb, #f5a6b1);
