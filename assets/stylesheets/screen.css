@@ -17,6 +17,10 @@ body {
 	min-height: 100%;
 }
 
+.as-striped {
+	background: url("../images/bg_pattern.png")
+}
+
 #map-canvas{height:662px}
 .infobox{
 	margin-top:10px;
@@ -344,7 +348,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.schedule th, .schedule td {
 		vertical-align: middle;
 		text-align: center;
-		padding-left: 6px;		
+		padding-left: 6px;
 		padding-right: 6px;
 	}
 	.schedule th:first-child, .schedule td:first-child {
