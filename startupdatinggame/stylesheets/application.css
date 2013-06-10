@@ -1,0 +1,328 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body, html {
+  background: #f0f0f0;
+  font: normal 12px Verdana;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background: black url("/images/background.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+  position: relative;
+  -webkit-box-shadow: 0 0 7px 0 black;
+  -moz-box-shadow: 0 0 7px 0 black;
+  box-shadow: 0 0 7px 0 black;
+}
+header .grid, header .content, header #particles_wrapper, header .blender {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+header #particles_wrapper {
+  overflow: hidden;
+}
+header #particles {
+  position: relative;
+}
+header .particle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: transparent url("/images/particle.png") no-repeat center center;
+}
+header .grid {
+  background: url("/images/grid.png");
+  opacity: 0.66;
+}
+header .content {
+  padding-top: 98px;
+  text-align: center;
+}
+header .content .logo {
+  margin: auto;
+  display: block;
+  width: 661px;
+  margin-bottom: 15px;
+}
+header .content p.tagline {
+  color: #aaaaaa;
+  font-style: italic;
+  font-size: 45px;
+  font-family: Georgia, "Times-New-Roman";
+}
+header .navigation {
+  overflow: hidden;
+  *zoom: 1;
+  display: inline-block;
+  margin-top: 114px;
+}
+header .navigation .left, header .navigation .right, header .navigation .center {
+  width: 6px;
+  height: 29px;
+  float: left;
+}
+header .navigation .left {
+  background: url("/images/ribbon-left.png");
+}
+header .navigation .right {
+  background: url("/images/ribbon-right.png");
+}
+header .navigation .center {
+  width: 330px;
+  background: url("/images/ribbon.png");
+  font: 700 12px museo-sans;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+header .navigation .center li {
+  display: inline-block;
+  margin: 0 10px;
+}
+header .navigation .center li a {
+  color: white;
+  padding: 7px 0;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .navigation > * {
+  display: inline-block;
+}
+
+body > .content {
+  padding-top: 25px;
+  width: 800px;
+  margin: auto;
+}
+body > .content section {
+  margin-bottom: 70px;
+  font: 500 14px museo-sans;
+  color: #656565;
+}
+body > .content section h1 {
+  background: url("/images/headline.png") no-repeat left center;
+  padding-left: 35px;
+  font: 700 26px museo-sans;
+  color: #bb000f;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+body > .content section p {
+  padding-left: 35px;
+  font: normal 16px museo-sans;
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+body > .content section.copyright {
+  text-align: center;
+  font-size: 12px;
+}
+body > .content a {
+  color: #bb000f;
+}
+body > .content a:hover {
+  text-decoration: none;
+}
+
+section.talks ul.talks {
+  text-align: center;
+}
+section.talks ul.talks li {
+  display: inline-block;
+  width: 175px;
+  height: 150px;
+}
+section.talks ul.talks li .avatar {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  border-radius: 90px;
+  border: 4px solid white;
+  margin: auto;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25), 0 5px 5px 0 rgba(0, 0, 0, 0.27) inset;
+  -moz-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25), 0 5px 5px 0 rgba(0, 0, 0, 0.27) inset;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25), 0 5px 5px 0 rgba(0, 0, 0, 0.27) inset;
+}
+section.talks ul.talks li .avatar.nobody {
+  background: url("/images/speakers/nobody.png") no-repeat center center;
+}
+section.talks ul.talks li .name {
+  font: 500 18px museo-sans;
+  color: #bb000f;
+}
+section.talks ul.talks li .handle, section.talks ul.talks li .handle a {
+  font: 500 14px museo-sans;
+  color: #929292;
+}
+section.talks ul.talks li .topic {
+  margin-top: 20px;
+  height: 30px;
+}
+
+section.sponsors ul.sponsors {
+  text-align: center;
+}
+section.sponsors ul.sponsors li {
+  display: inline-block;
+  width: 175px;
+}
+section.sponsors ul.sponsors li img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+section.sponsors ul.sponsors li img:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@font-face {
+  font-family: "museo-sans";
+  src: url("/fonts/MuseoSans_700-webfont.eot");
+  src: url("/fonts/MuseoSans_700-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSans_700-webfont.woff") format("woff"), url("/fonts/MuseoSans_700-webfont.ttf") format("truetype"), url("/fonts/MuseoSans_700-webfont.svg#museo_sans_700regular") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "museo-sans";
+  src: url("/fonts/MuseoSans_300-webfont.eot");
+  src: url("/fonts/MuseoSans_300-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSans_300-webfont.woff") format("woff"), url("/fonts/MuseoSans_300-webfont.ttf") format("truetype"), url("/fonts/MuseoSans_300-webfont.svg#museo_sans_300regular") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "museo-sans";
+  src: url("/fonts/MuseoSans_100-webfont.eot");
+  src: url("/fonts/MuseoSans_100-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSans_100-webfont.woff") format("woff"), url("/fonts/MuseoSans_100-webfont.ttf") format("truetype"), url("/fonts/MuseoSans_100-webfont.svg#museo_sans_100regular") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
