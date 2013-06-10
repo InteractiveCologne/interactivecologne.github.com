@@ -361,7 +361,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.schedule a, .scheduleoverview a {
 		color: #fff;
 	}
-    .schedule .common, .scheduleoverview .common {
+    .schedule .common, .scheduleoverview .common, .schedulelegend .common {
 	    color: #fff;
 	    background-color: #869693;
 /*	  background: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
@@ -369,7 +369,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	    background: -ms-linear-gradient(top, #f1f1f1, #e1e1e1);
 	    background: linear-gradient(top, #f1f1f1, #e1e1e1);
 */    }
-    .schedule .hackorga, .scheduleoverview .hackorga {
+    .schedule .hackorga, .scheduleoverview .hackorga, .schedulelegend .hackorga {
 	    color: #fff;
 	    background-color: #59446D;
 /*	    background: -webkit-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
@@ -377,7 +377,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	    background: -ms-linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));
 	    background: linear-gradient(top, rgb(177, 250, 159), rgb(164, 231, 147));*/
     }
-    .schedule .hackitself, .scheduleoverview .hackitself {
+    .schedule .hackitself, .scheduleoverview .hackitself, .schedulelegend .hackitself {
 	    color: #fff;
 	    background-color: #59446D;
 /*	    background: -webkit-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
@@ -385,7 +385,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	    background: -ms-linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 	    background: linear-gradient(top, rgb(146, 206, 130), rgb(122, 172, 109));
 */    }
-	.schedule .hackkickoffaward, .scheduleoverview .hackkickoffaward {
+	.schedule .hackkickoffaward, .scheduleoverview .hackkickoffaward, .schedulelegend .hackkickoffaward {
 		color: #fff;
 		background-color: #59446D;
 /*		background: -webkit-linear-gradient(top, #a5d4fa, #9ac5e8);
@@ -393,7 +393,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 		background: -ms-linear-gradient(top, #a5d4fa, #9ac5e8);
 		background: linear-gradient(top, #a5d4fa, #9ac5e8);*/
 	}
-    .schedule .hacktalks, .scheduleoverview .hacktalks {
+    .schedule .hacktalks, .scheduleoverview .hacktalks, .schedulelegend .hacktalks {
 	    color: #fff;
 	    background-color: #59446D;
 /*	    background: -webkit-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
@@ -401,7 +401,7 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	    background: -ms-linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));
 	    background: linear-gradient(top, rgb(156, 219, 139), rgb(141, 198, 126));*/
     }
-    .schedule .startuptalks, .scheduleoverview .startuptalks {
+    .schedule .startuptalks, .scheduleoverview .startuptalks, .schedulelegend .startuptalks {
 	    color: #fff;
 	    background-color: #3E8CBD;
 /*	    background: -webkit-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
@@ -409,9 +409,9 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	    background: -ms-linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 	    background: linear-gradient(top, rgb(249, 253, 123), rgb(238, 239, 89));
 */    }
-    .schedule .startupbreakfast, .scheduleoverview .startupbreakfast {
+    .schedule .startupbreakfast, .scheduleoverview .startupbreakfast, .schedulelegend .startupbreakfast {
 	    color: #fff;
-			background-color: #869693;
+		background-color: #869693;
 /*	    background: -webkit-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: -o-linear-gradient(top, #ffc3cb, #f5a6b1);
 	    background: -ms-linear-gradient(top, #ffc3cb, #f5a6b1);
@@ -430,23 +430,39 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
     .scheduleoverview .copop {
 	    background-color: #68807e;
     }
+    .schedulelegend, .schedulelegend table {
+        width: 100%;
+    }
+    .schedulelegend td {
+        width: 25%;
+        vertical-align: middle;
+        text-align: center;
+        padding-left: 6px;
+        padding-right: 6px;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
 
 @media screen and (max-width: 720px) {
-	.schedule {
+	.schedule, .scheduleoverview {
 		width: 100%;
 		overflow-x: scroll;
 	}
-	.schedule:before {
+	.schedule:before, .scheduleoverview:before {
 		content: '← swipe →';
 	}
-	.schedule table {
+	.schedule table, .scheduleoverview table {
 		width: 720px;
 	}
-	.x-schedule tr td:first-child {
-		position: absolute;
-		width: 72px;
-		background-color: black;
-	}
+    .schedulelegend table {
+        display: inline-table;
+    }
+    .schedulelegend td {
+        display: list-item;
+        width: 100%;
+        margin: 2px 0;
+        padding: 6px;
+    }
 }
 
 /* -- Registration form ---------------------------------------------------- */
