@@ -37,11 +37,11 @@ body {
   position: absolute;
   top: 0;
 }
-#newsletter {
+#social {
   position: absolute;
   bottom: 0;
   right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: -28px;
 }
 
 .as-striped {
