@@ -39,7 +39,9 @@ body {
 }
 #newsletter {
   position: absolute;
-  display: none;
+  bottom: 0;
+  right: 20px;
+  margin-bottom: 20px;
 }
 
 .as-striped {
