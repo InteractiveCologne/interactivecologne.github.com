@@ -20,7 +20,7 @@ body {
 
 #ia-logo {
   margin-bottom: 0;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 767px) {
