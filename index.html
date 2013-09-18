@@ -2,81 +2,18 @@
 layout: layout
 ---
 
-{% include header.html %}
-
-<div class="container frontpage">
-	<div class="amazingpeople">
-		Meet amazing people.<br/>
-		Be inspired.
-	</div>
-	<div class="row">
-		<div class="span6">
-			<span class="date">June 17-23, 2013</span><br/>
-			<a href="/tickets.html" class="ticket">Get your ticket now</a>
-		</div>
-		<div class="span6">
-			<ul>
-				<li class="locations_icon">Impressive <a href="/map.html">locations</a> in Cologne</li>
-				<li class="speakers_icon">Amazing <a href="/speakers.html">speakers</a></li>
-				<li class="parties_icon">Many <a href="/parties.html">parties</a> and concerts</li>
-				<li class="inspirations_icon">Lots of inspiration and creativity</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="content about">
-		<div class="row">
-			<p class="span6">
-				INTERACTIVE COLOGNE is a one-week festival coming up in June 2013.
-				It is more than just a festival. It is a <strong>hackathon and startup conference</strong>.
-				It is for talented <a href="/hack-n-tech.html">hackers and designers</a> who gather there
-				to kick-off their own or others’ projects, refine or complete code
-			</p>
-			<p class="span6">
-				collaboratively or just experiment. It is for <a href="/startup.html">startups, investors and entrepreneurs</a>
-				to meet in a creative atmosphere to discuss hot topics and network with other
-				technology industry professionals who share similar passions and social interests.
-			</p>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="content span4" style="min-height: 200px;">
-			<h3>Tell me more</h3>
-			<form novalidate="" method="post" action="http://railslove.us4.list-manage2.com/subscribe/post?u=35591fb9ad996836219f10cbd&amp;id=bcbf2fe4bb">
-				<label for="email">Make sure you never miss the news:</label>
-				<input type="email" placeholder="E-Mail" id="email" name="EMAIL" value="" required style="-webkit-border-radius: 0;">
-				<button type="submit" name="subscribe">Stay tuned</button>
-			</form>
-		</div>
-		<div class="content span4" style="min-height: 200px;">
-			<h3>Get in touch</h3>
-			Any idea how to support Interactive Cologne? Contact us
-			<a href="mailto:info@interactive-cologne.com">info@interactive-cologne.com</a>
-		</div>
-		<div class="content span4" style="min-height: 200px;">
-			<h3>Socialize</h3>
-			<ul>
-				<li><a href="https://www.facebook.com/InteractiveCologne" target="_blank" style="color: white; text-decoration: none;"><img src="/assets/images/button_facebook2.png" width="32" height="32" alt="Facebook"> Facebook</a></li>
-				<li><a href="https://twitter.com/interactive_cgn" target="_blank" style="color: white; text-decoration: none;"><img src="/assets/images/button_twitter2.png" width="32" height="32" alt="Twitter"> Twitter</a></li>
-			</ul>
-		</div>
-	</div>
+<div class="frontpage">
+  <img id="ia-logo" src="/assets/images/interactive-cologne-logo.png" width="573" height="65">
+  <div id="video_player">
+    <iframe id="player1" src="http://player.vimeo.com/video/74815141?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;loop=1&amp;api=1&amp;player_id=player1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="overlay"></div>
+  </div>
+  <div id="newsletter" style="min-height: 200px;">
+    <h3>Tell me more</h3>
+    <form novalidate="" method="post" action="http://railslove.us4.list-manage2.com/subscribe/post?u=35591fb9ad996836219f10cbd&amp;id=bcbf2fe4bb">
+      <label for="email">Make sure you never miss the news:</label>
+      <input type="email" placeholder="E-Mail" id="email" name="EMAIL" value="" required style="-webkit-border-radius: 0;">
+      <button type="submit" name="subscribe">Stay tuned</button>
+    </form>
+  </div>
 </div>
-
-{% include organizers.html %}
-
-{% include footer.html %}
-
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script>
-	// init
-	$('.accordeon').each(function() {
-		$(this).find('h3:not(:first)').addClass('collapsed').next('div').hide();
-	});
-	// tab click
-	$(document).on('click', '.accordeon h3', function (e) {
-		$(this).parent().find('h3').not( $(this) ).addClass('collapsed').next('div').slideUp('slow');
-		$(this).removeClass('collapsed').next('div').slideDown('slow');
-	});
-</script>
