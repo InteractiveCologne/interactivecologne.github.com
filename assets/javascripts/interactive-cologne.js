@@ -18,10 +18,10 @@ var _gaq = _gaq || [];
     }
     //alert(video_width+','+video_height);
     
-    $('#video_player').css('top', video_top+'px');
-    $('#video_player').css('left', video_left+'px');
-    $('#video_player').width(video_width);
-    $('#video_player').height(video_height);
+    $('#player1').css('top', video_top+'px');
+    $('#player1').css('left', video_left+'px');
+    $('#player1').width(video_width);
+    $('#player1').height(video_height);
   });
 
   $(window).trigger('resize');
