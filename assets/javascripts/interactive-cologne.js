@@ -33,8 +33,7 @@ var _gaq = _gaq || [];
   $(window).trigger('resize');
 
   var iframe = $('#player1')[0],
-      player = $f(iframe),
-      status = $('.status');
+      player = $f(iframe);
 
   $('.overlay').click(function(e){
     player.api('play');
