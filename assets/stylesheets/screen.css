@@ -41,7 +41,10 @@ body {
   position: absolute;
   bottom: 0;
   right: 20px;
-  margin-bottom: -28px;
+}
+
+#social .content {
+	margin-bottom: 20px;
 }
 
 .as-striped {
