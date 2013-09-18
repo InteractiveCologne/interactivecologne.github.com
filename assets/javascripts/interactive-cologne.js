@@ -32,4 +32,12 @@ var _gaq = _gaq || [];
 
   $(window).trigger('resize');
 
+  var iframe = $('#player1')[0],
+      player = $f(iframe),
+      status = $('.status');
+
+  $('.overlay').click(function(e){
+    player.api('play');
+  });
+
 } ( jQuery ) );
