@@ -34,6 +34,11 @@ var _gaq = _gaq || [];
 
   $f('trailerPlayer').addEvent('ready', trailerPlayerReady);
 
+  var interviews = [
+    {time: 5.97, video_id: '74952385'},
+    {time: 10.167, video_id: '75003394'}
+  ]
+
   function trailerPlayerReady(player_id){
     var player = $f(player_id);
 
@@ -42,7 +47,10 @@ var _gaq = _gaq || [];
     });
 
     player.addEvent('playProgress', function(data) {
-      // console.log('playProgress event : ' + data.seconds + ' : ' + data.percent + ' : ' + data.duration);
+      if( interviews.length > 0 && data.seconds >= interviews[0].time ){
+        var interview = interviews.shift();
+        // console.log("play interview: ", interview.video_id);
+      }
     });
   }
 
