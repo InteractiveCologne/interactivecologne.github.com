@@ -24,19 +24,26 @@ var _gaq = _gaq || [];
       video_left = 0;
     }
     
-    $('#player1').css('top', video_top+'px');
-    $('#player1').css('left', video_left+'px');
-    $('#player1').width(video_width);
-    $('#player1').height(video_height);
+    $('#trailerPlayer').css('top', video_top+'px');
+    $('#trailerPlayer').css('left', video_left+'px');
+    $('#trailerPlayer').width(video_width);
+    $('#trailerPlayer').height(video_height);
   });
 
   $(window).trigger('resize');
 
-  var iframe = $('#player1')[0],
-      player = $f(iframe);
+  $f('trailerPlayer').addEvent('ready', trailerPlayerReady);
 
-  $('.overlay').click(function(e){
-    player.api('play');
-  });
+  function trailerPlayerReady(player_id){
+    var player = $f(player_id);
+
+    $('.overlay').click(function(e){
+      player.api('play');
+    });
+
+    player.addEvent('playProgress', function(data) {
+      // console.log('playProgress event : ' + data.seconds + ' : ' + data.percent + ' : ' + data.duration);
+    });
+  }
 
 } ( jQuery ) );
