@@ -43,7 +43,13 @@ var _gaq = _gaq || [];
     var player = $f(player_id);
 
     $('.overlay').click(function(e){
-      player.api('play');
+      player.api('paused', function (value, player_id) {
+        if(value){
+          player.api('play');
+        } else {
+          player.api('pause');
+        }
+      });
     });
 
     player.addEvent('playProgress', function(data) {
