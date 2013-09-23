@@ -1,5 +1,6 @@
 /*global google, InfoBox */
 var _gaq = _gaq || [];
+var pointAnimation;
 ( function( $ ) {
 	"use strict";
 
@@ -60,4 +61,26 @@ var _gaq = _gaq || [];
     });
   }
 
+  pointAnimation = function(startX, startY) {
+    var point = $('<div class="point">');
+    var _x = startX;
+    for( var _y = startY; _y < $(window).height() - 200; _y += 20){
+      var _p = point.clone();
+      _p.appendTo('body');
+      _p
+      .animate({ left: _x, top: _y }, (_y-startY)*5)
+      .animate({ opacity: 1 }, 500)
+      .animate({ opacity: 1}, 500)
+      .animate({ opacity: 0 });
+    }
+    for( var _x = startX; _x > 200; _x -= 20){
+      var _p = point.clone();
+      _p.appendTo('body');
+      _p
+      .animate({ left: _x, top: _y }, (_y-startY)*5 + (startX-_x)*5)
+      .animate({ opacity: 1 }, 500)
+      .animate({ opacity: 1}, 500)
+      .animate({ opacity: 0 });
+    }
+  }
 } ( jQuery ) );
