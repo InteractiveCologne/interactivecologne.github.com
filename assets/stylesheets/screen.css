@@ -331,6 +331,8 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 	.frontpage li {
 		font: 1.2em/2.1em 'Open Sans Condensed', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 		font-weight: bold;
+		float: left;
+		margin-right: 20px;
 	}
 	.frontpage li span {
 		width: 32px;
