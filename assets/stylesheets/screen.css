@@ -20,7 +20,6 @@ body {
 
 #ia-logo {
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .point {
@@ -60,13 +59,35 @@ body {
   }
   #social {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     right: 20px;
   }
 
-  #social .content {
-    margin-bottom: 20px;
+  #about {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
   }
+
+  #about .content, #social .content {
+  	margin-bottom: 0;
+  	height: 280px;
+  }
+
+  #ia-logo .content {
+  	margin-bottom: 0;
+  }
+
+  #about h3, #social h3 {
+  	margin-top: 0;
+  }
+
+  #callforpapers {
+  	position: absolute;
+  	top: 410px;
+  	left: 20px;
+  }
+
 }
 
 .as-striped {
@@ -173,6 +194,10 @@ h4.marker, h4.marker-white, h5.marker, h5.marker-white, h6.marker, h6.marker-whi
 }
 #header {
 
+}
+
+.frontpage {
+	position: relative;
 }
 
 #content {
@@ -764,4 +789,68 @@ footer {
 
 .ticketing h2 {
 	display:none;
+}
+
+/*Call for papers*/
+
+
+#text {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+#special {
+  position: absolute;
+  top: 150px;
+  right: 20px;
+}
+
+
+.call_for_papers .ss-q-title label, .call_for_papers .ss-form-entry label{
+	display: inline-block;
+}
+
+.call_for_papers textarea, .call_for_papers input[type=text] {
+	width: 250px !important;
+}
+.call_for_papers textarea {
+	height: 103px;
+	margin-bottom: 0;
+}
+
+.call_for_papers form {
+	overflow: hidden;
+}
+
+.call_for_papers .ss-q-title, .call_for_papers .ss-form-entry{
+	line-height: 20px;
+}
+
+.call_for_papers .form-column {
+	width: 250px;
+	margin-right: 47px;
+	float: left;
+}
+
+.call_for_papers .ss-choice-item {
+	/*height: 20px;*/
+}
+
+.call_for_papers .ss-choices {
+	overflow: hidden;
+	height: 90px;
+}
+
+.call_for_papers .ss-choice-label {
+	width: 70px;
+}
+
+.call_for_papers .ss-choice-item-control {
+	width: 21px;
+}
+
+.call_for_papers #ss-submit {
+	width: 250px !important;
+	margin-top: 34px !important;
 }
