@@ -84,7 +84,7 @@ body {
 
   #callforpapers {
   	position: absolute;
-  	top: 410px;
+  	top: 600px;
   	left: 20px;
   }
 
@@ -803,7 +803,7 @@ footer {
 #special {
   position: absolute;
   top: 150px;
-  right: 20px;
+  left: 500px;
 }
 
 
@@ -834,7 +834,7 @@ footer {
 }
 
 .call_for_papers .ss-choice-item {
-	/*height: 20px;*/
+	height: 25px;
 }
 
 .call_for_papers .ss-choices {
