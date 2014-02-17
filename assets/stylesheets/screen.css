@@ -84,9 +84,15 @@ body {
 
   #callforpapers {
   	position: absolute;
-  	top: 600px;
+  	top: 460px;
   	left: 20px;
   }
+
+  #wdc_callforpapers {
+  	position: absolute;
+  	top: 600px;
+  	left: 20px;
+  }  
 
 }
 
