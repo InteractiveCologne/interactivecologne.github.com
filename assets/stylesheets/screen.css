@@ -8,7 +8,7 @@
 /* -- Content formatting --------------------------------------------------- */
 html { height: 100%; }
 body {
-  /* background: #000; */
+   background: #eee;
 	position: relative;
 	font: 1.0em/1.5em 'Noto Sans', Tahoma, Geneva, Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
